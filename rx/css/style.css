@@ -245,6 +245,11 @@ h6 {
   padding: 17px 32px;
 }
 
+.page-header__button--oppened {
+  position: absolute;
+  bottom: 24px;
+}
+
 .page-header__toggle--closed {
   height: 19px;
 }
@@ -378,6 +383,7 @@ h6 {
 .menu--oppened {
   transform: translateX(0%);
   margin-top: 32px;
+  height: calc(100vh - 105px);
 }
 
 .menu__list {
@@ -400,7 +406,7 @@ h6 {
 
 .promo {
   padding: 32px 16px 0 16px;
-  margin-bottom: 80px;
+  margin-bottom: 57px;
 }
 
 .promo__title {
@@ -463,11 +469,8 @@ h6 {
   }
 }
 .subpromo {
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  background: #190C39;
   color: #ffffff;
-  padding: 24px 16px 32px 16px;
+  padding: 24px 16px 83px;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
@@ -510,7 +513,7 @@ h6 {
 
 .subpromo__card--first {
   top: 70px;
-  right: 50%;
+  right: calc(50% + 30px);
   width: 156px;
   height: 194px;
   background: #76E3D4;
@@ -520,7 +523,7 @@ h6 {
 
 .subpromo__card--second {
   top: 0;
-  left: 50%;
+  left: calc(50% - 22px);
   width: 227px;
   min-height: 299px;
   transform: rotate(11deg);
@@ -835,7 +838,6 @@ h6 {
 
 .why__communication {
   display: block;
-  border-radius: 25px;
 }
 
 .why__img-tel {
@@ -887,18 +889,22 @@ h6 {
   margin: 0 auto;
 }
 
+.subpromo-wrapper {
+  border-radius: 40px;
+  overflow: hidden;
+  background: #190c39;
+}
+
 .subpromo-slider {
   background: #190C39 url("../img/elips.png") no-repeat center bottom;
   background-size: contain;
   color: #ffffff;
   padding-bottom: 56px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
 .subpromo-slider__title {
   max-width: 382px;
-  margin: 0 auto;
+  margin: 0 auto 87px;
   text-align: center;
 }
 
@@ -910,7 +916,7 @@ h6 {
 
 @media (min-width: 768px) {
   .subpromo-slider {
-    background: #190C39 url(../../img/elipse-tablet.png) no-repeat center bottom;
+    background: #190C39 url("../img/elipse-tablet.png") no-repeat center bottom;
     background-size: contain;
   }
 
@@ -952,9 +958,9 @@ h6 {
 }
 .service-features__buttons-container {
   width: 100%;
-  overflow: auto;
   padding-left: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
+  box-sizing: border-box;
 }
 @media (min-width: 1280px) {
   .service-features__buttons-container {
@@ -1068,7 +1074,7 @@ h6 {
   position: relative;
   height: 236px;
   width: 144px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 }
 
 .softs__item {
@@ -1093,6 +1099,9 @@ h6 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 14px;
 }
 
 .softs__center {
@@ -1108,7 +1117,8 @@ h6 {
 }
 
 .softs__logo {
-  width: 100%;
+  height: 100%;
+  width: auto;
 }
 
 .softs__block {
@@ -1158,6 +1168,7 @@ h6 {
   position: absolute;
   left: calc(50% + 19px);
   top: 100%;
+  transform: translateY(-50%);
 }
 .softs__in::before {
   content: "";
@@ -1183,7 +1194,7 @@ h6 {
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
-  background: #31d8b1 url("../img/softs/check.svg") no-repeat 12px 7px;
+  background: #31d8b1 url("../img/softs/check.svg") no-repeat 12px center;
   font-size: 13px;
   font-weight: 500;
   line-height: 18px;
@@ -1191,6 +1202,7 @@ h6 {
   background-size: 12px 12px;
   position: absolute;
   right: calc(50% + 19px);
+  transform: translateY(-50%);
 }
 .softs__out::before {
   content: "";
