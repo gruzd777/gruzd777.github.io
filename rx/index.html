@@ -65,14 +65,14 @@
             <p class="subpromo__text subpromo__text--second">
               Our API receives and sends data from your software, which you can customize. For example, you can update your pharmacy software with a delivery ETA, status, signature, and a photo of a patient's door.
             </p>
-            <div class="subpromo__card-container">
-              <div class="subpromo__card subpromo__card--first">
+            <div class="subpromo__card-container hoist">
+              <div class="subpromo__card subpromo__card--first hoisting__element hoisting__element--not-visible">
                 <svg class="subpromo__icon subpromo__icon--fan" width="55" height="55">
                   <use href="./img/sprite.svg#promo-icon-1"></use>
                 </svg>
                 <p class="subpromo__card-text subpromo__card-text--first">All information is updated in real time</p>
               </div>
-              <div class="subpromo__card subpromo__card--second">
+              <div class="subpromo__card subpromo__card--second  hoisting__element hoisting__element--not-visible">
                 <svg class="subpromo__icon subpromo__icon--world" width="85" height="85">
                   <use href="./img/sprite.svg#promo-icon-2"></use>
                 </svg>
@@ -147,7 +147,7 @@
           <div class="service-features__wrapper">
             <h2 class="service-features__title title-2">Service features</h2>
             <div class="service-features__container">
-              <div class="service-features__buttons-container">
+              <div class="service-features__buttons-container push-right push-right--animation">
                 <div class="service-features__buttons-wrapper">
                   <div class="service-features__buttons">
                     <button class="service-features__button button button--squared active" type="button">For Pharmacies</button>
@@ -338,14 +338,16 @@
         </section>
         <section class="why" id="about">
             <h2 class="why__title title-2">Why Rx4Route?</h2>
-            <p class="why__subtitle">Our tools streamline front-end and behind-the-counter pharmacy operations and identify
+            <p class="why__subtitle hoisting-text hoisting-text--start">Our tools streamline front-end and behind-the-counter pharmacy operations and identify
               cost-saving opportunities for patients so pharmacists can focus on what matters most – their patients’ health.</p>
             <ul class="why__list">
               <li class="why__item">
                 <h4 class="why__item-title title-4">Modern technologies</h4>
-                <p class="why__description">The software of the Rx4Router provides advanced route optimization capabilities,
+                <p class="why__description hoisting-text hoisting-text--start">
+                  The software of the Rx4Router provides advanced route optimization capabilities,
                   providing the most efficient delivery routes for the drivers of your pharmacy. This helps to reduce travel time,
-                  minimize fuel consumption and improve overall delivery efficiency.</p>
+                  minimize fuel consumption and improve overall delivery efficiency.
+                </p>
                 <div class="why__map hoist">
                   <img class="why__pic" src="./img/map-big.png" alt="Map">
                   <div class="why__widget-time hoisting__element hoisting__element--not-visible">
@@ -378,7 +380,7 @@
               </li>
               <li class="why__item">
                 <h4 class="why__item-title title-4">Compliance and Privacy Concerns</h4>
-                <p class="why__description">Rx4Route understands the importance or maintaining compliance with regulations such as
+                <p class="why__description  hoisting-text hoisting-text--start">Rx4Route understands the importance or maintaining compliance with regulations such as
                   HIPAA. Your software is designed with stringent security measures to protect patient information and ensure
                   adherence to privacy quidelines.</p>
                 <div class="why__map hoist">
@@ -388,7 +390,7 @@
               </li>
               <li class="why__item">
                 <h4 class="why__item-title title-4">Real-time tracking</h4>
-                <p class="why__description why__description--margin">With Rx4 Route, you can provide your patients with real-time tracking capability. They
+                <p class="why__description why__description--margin  hoisting-text hoisting-text--start">With Rx4 Route, you can provide your patients with real-time tracking capability. They
                   can easily track the status and location of the delivery of their recipes, eliminating uncertainty and
                   increasing customer satisfaction.</p>
                   <div class="why__map hoist">
@@ -403,7 +405,9 @@
               </li>
               <li class="why__item">
                 <h4 class="why__item-title title-4">Timely notifications</h4>
-                <p class="why__description">With Life Text Message Notifications, your customers receive timely updates at every crucial stage of their delivery. From order confirmation to driver arrival and successful delivery, they stay informed throughout the process. This level of communication not only boosts customer satisfaction but also reduces customer inquiries and concerns, freeing up your staff's time for more important tasks.</p>
+                <p class="why__description  hoisting-text hoisting-text--start">
+                  With Life Text Message Notifications, your customers receive timely updates at every crucial stage of their delivery. From order confirmation to driver arrival and successful delivery, they stay informed throughout the process. This level of communication not only boosts customer satisfaction but also reduces customer inquiries and concerns, freeing up your staff's time for more important tasks.
+                </p>
                   <div class="why__map hoist">
                     <img class="why__communication" src="./img/message.svg" alt="">
                     <img class="why__widget-driver-out hoisting__element hoisting__element--not-visible" src="./img/widget-driver-out.svg" alt="">
@@ -463,6 +467,5 @@
     </footer>
     <script src="./vendor/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/burger.js"></script>
   </body>
 </html>

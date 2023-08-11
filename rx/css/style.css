@@ -151,6 +151,10 @@ h6 {
   color: #ffffff;
 }
 
+.hoist {
+  z-index: 10;
+}
+
 .hoisting__element {
   transition: all 2s ease-out;
   z-index: 10;
@@ -163,6 +167,37 @@ h6 {
   opacity: 0;
 }
 
+.hoisting-text {
+  line-height: 21px;
+  transition: all 0.6s;
+  opacity: 1;
+  translate: 0 0;
+}
+
+.hoisting-text--start {
+  line-height: 30px;
+  opacity: 0;
+  translate: 0 100px;
+}
+
+.push-right--animation {
+  animation: push 0.8s ease-in;
+}
+
+@keyframes push {
+  0% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0 0;
+  }
+  75% {
+    translate: 60px 0;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
 .page {
   height: 100%;
   scroll-behavior: smooth;
@@ -187,7 +222,7 @@ h6 {
 }
 
 .page-header {
-  background-color: #ffffff;
+  background-color: #F5FFFC;
   padding-top: 32px;
   padding-left: 16px;
   padding-right: 16px;
@@ -488,6 +523,8 @@ h6 {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  z-index: 10;
+  position: relative;
 }
 
 .subpromo__title {
@@ -927,7 +964,7 @@ h6 {
 
 .subpromo-slider__title {
   max-width: 382px;
-  margin: 0 auto 40px;
+  margin: 0 auto 74px;
   text-align: center;
 }
 
@@ -1129,7 +1166,7 @@ h6 {
   height: 275px;
   width: 144px;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 1.5s;
 }
 
 .softs__item--active {
@@ -1137,8 +1174,8 @@ h6 {
 }
 
 .softs__link {
-  width: 165px;
-  height: 100px;
+  width: 160px;
+  height: 71px;
   display: block;
   position: absolute;
   top: 0;
@@ -1159,8 +1196,8 @@ h6 {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  width: 165px;
-  height: 100px;
+  width: 160px;
+  height: 71px;
   box-sizing: border-box;
   justify-content: center;
   display: flex;
@@ -1220,7 +1257,6 @@ h6 {
   top: 100%;
   transform: translateY(-50%);
   opacity: 0;
-  white-space: nowrap;
 }
 .softs__in::before {
   content: "";
@@ -1255,7 +1291,6 @@ h6 {
   position: absolute;
   right: calc(50% + 19px);
   transform: translateY(-50%);
-  white-space: nowrap;
   opacity: 0;
 }
 .softs__out::before {
