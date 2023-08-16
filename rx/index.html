@@ -14,7 +14,7 @@
     <title>Rx4Route</title>
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header container">
       <div class="page-header__container">
         <a class="page-header__logo-link">
           <img class="page-header__logo" src="./img/logo.svg" alt="Logotype Rx4Route">
@@ -47,7 +47,7 @@
       </nav>
     </header>
     <main class="page-main">
-        <section class="promo">
+        <section class="promo container">
           <h1 class="promo__title">Expand your pharmacy with Rx4Route</h1>
           <p class="promo__text">Introducing Rx4Route: The cutting-edge delivery software for pharmacies. Real-time tracking, door picture verification, and efficient routes. Elevate your prescription delivery service today.</p>
           <button class="promo__button button button--dark" type="button">Get Quote</button>
@@ -60,7 +60,7 @@
           </div> -->
         </section>
         <div class="subpromo-wrapper">
-          <section class="subpromo" id="features">
+          <section class="subpromo container" id="features">
             <h2 class="subpromo__title title-2">Our technology is reliable, fast, and easy to use</h2>
             <p class="subpromo__text">
               We collaborate with PrimeRx, PioneerRx, SuiteRx, DataScan, PkSoftware and LifeFile or Rx4Route can integrate with any other software you use.
@@ -330,16 +330,21 @@
           </div>
         </section>
         <section class="test-drive">
-          <h3 class="test-drive__title title-3 title-3--white">We offer a test drive - 7 days for free</h3>
-          <p class="test-drive__subtitle">You will get access to all the features of Rx4Route for free. And after 7 days, all
-            data will be saved and you will be able to pay for the service directly in your personal account.</p>
-          <button class="test-drive__button button button--purple">Try it for free</button>
-          <picture>
-            <source type="image/webp" srcset="img/quadro.webp">
-            <img class="test-drive__img" src="./img/quadro.png" alt="">
-          </picture>
+          <div class="container test-drive__flex-container">
+            <div class="test-drive__block-1">
+              <h3 class="test-drive__title title-3 title-3--white">We offer a test drive - 7 days for free</h3>
+              <p class="test-drive__subtitle">You will get access to all the features of Rx4Route for free. And after 7 days, all
+                data will be saved and you will be able to pay for the service directly in your personal account.</p>
+              <button class="test-drive__button button button--purple">Try it for free</button>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/quadro.webp">
+              <img class="test-drive__img" src="./img/quadro.png" alt="">
+            </picture>
+          </div>
         </section>
         <section class="why" id="about">
+          <div class="container">
             <h2 class="why__title title-2">Why Rx4Route?</h2>
             <p class="why__subtitle hoisting-text hoisting-text--start">Our tools streamline front-end and behind-the-counter pharmacy operations and identify
               cost-saving opportunities for patients so pharmacists can focus on what matters most – their patients’ health.</p>
@@ -349,15 +354,15 @@
                 <p class="why__description hoisting-text hoisting-text--start">
                   Rx4Route harnesses the power of modern technologies to optimize your pharmacy's delivery operations. Our intelligent algorithms and user-friendly interface streamline the entire process, enabling you to achieve higher levels of efficiency and productivity. With automation and real-time tracking, your business can stay ahead of the competition and deliver exceptional service to your customers.
                 </p>
-                <div class="why__map hoist">
+                <div class="why__map why__map--moderntech hoist">
                   <img class="why__pic-main" src="./img/modern-tech.svg" alt="">
                   <img class="why__pic-widgets hoisting__element hoisting__element--not-visible" src="./img/modern-widgets.svg" alt="">
                 </div>
               </li>
               <li class="why__item">
-                <h4 class="why__item-title why__item-title--even title-4">Real time tracking</h4>
-                <p class="why__description why__description--even hoisting-text hoisting-text--start">With real-time tracking, you gain complete visibility into your delivery operations. Monitor the status of each delivery, track your drivers' routes, and provide timely updates to your customers. This level of transparency and communication not only improves customer satisfaction but also allows you to make informed decisions to enhance your business's performance. </p>
-                <div class="why__map hoist">
+                <h4 class="why__item-title why__item-title--realtime why__item-title--even title-4">Real time tracking</h4>
+                <p class="why__description why__description--realtime why__description--even hoisting-text hoisting-text--start">With real-time tracking, you gain complete visibility into your delivery operations. Monitor the status of each delivery, track your drivers' routes, and provide timely updates to your customers. This level of transparency and communication not only improves customer satisfaction but also allows you to make informed decisions to enhance your business's performance. </p>
+                <div class="why__map why__map--realtime hoist">
                   <img class="why__pic" src="./img/map-big.png" alt="Map">
                   <div class="why__widget-time hoisting__element hoisting__element--not-visible">
                     <h5 class="why__widget-title">ETA:</h5>
@@ -387,10 +392,10 @@
                   </div>
                 </div>
               </li>
-              <li class="why__item">
+              <li class="why__item why__item--scale">
                 <h4 class="why__item-title title-4">Scale your business</h4>
-                <p class="why__description why__description--margin  hoisting-text hoisting-text--start">Integrate Rx4Route seamlessly with your pharmacy's existing systems and infrastructure. Our software adapts to your needs, enabling a smooth transition and allowing you to leverage your current technology investments for an even more robust delivery operation.</p>
-                  <div class="why__map why__map--bg hoist">
+                <p class="why__description why__description--scale why__description--margin  hoisting-text hoisting-text--start">Integrate Rx4Route seamlessly with your pharmacy's existing systems and infrastructure. Our software adapts to your needs, enabling a smooth transition and allowing you to leverage your current technology investments for an even more robust delivery operation.</p>
+                  <div class="why__map why__map--scale why__map--bg hoist">
                     <img src="./img/newlaptop.png" alt="">
                     <div class="why__svg-container why__svg-container--primerx hoisting__element hoisting__element--not-visible">
                       <img class="why__map-svg why__map-svg--primerx" src="./img/softs/primerx.svg">
@@ -418,70 +423,81 @@
                   </div>
               </li>
               <li class="why__item">
-                <h4 class="why__item-title why__item-title--even title-4">Compliance and <br class="why__item-title--privacy"> Privacy Concerns</h4>
+                <h4 class="why__item-title why__item-title--privacy why__item-title--even title-4">Compliance and <br class="why__item-title--privacy"> Privacy Concerns</h4>
                 <p class="why__description why__description--even hoisting-text hoisting-text--start">
                   Rx4Route understands the importance or maintaining compliance with regulations such as HIPAA. Your software is designed with stringent security measures to protect patient information and ensure adherence to privacy quidelines.
                 </p>
-                <div class="why__map hoist">
+                <div class="why__map why__map--privacy hoist">
                   <img class="why__img-dashboard" src="./img/dashboard.png" alt="">
                   <img class="why__img-hipa hoisting__element hoisting__element--not-visible" src="./img/hipaa.svg" alt="">
                 </div>
               </li>
               <li class="why__item">
                 <h4 class="why__item-title title-4">Timely notifications</h4>
-                <p class="why__description hoisting-text hoisting-text--start">
+                <p class="why__description why__description--timely hoisting-text hoisting-text--start">
                   With Life Text Message Notifications, your customers receive timely updates at every crucial stage of their delivery. From order confirmation to driver arrival and successful delivery, they stay informed throughout the process. This level of communication not only boosts customer satisfaction but also reduces customer inquiries and concerns, freeing up your staff's time for more important tasks.
                 </p>
-                  <div class="why__map hoist">
+                  <div class="why__map why__map--timely hoist">
                     <img class="why__communication" src="./img/message.svg" alt="">
                     <img class="why__widget-driver-out hoisting__element hoisting__element--not-visible" src="./img/widget-driver-out.svg" alt="">
                   </div>
               </li>
             </ul>
+          </div>
           </section>
         <section class="slogan">
-          <h3 class="slogan__title title-3 title-3--big">Make your job easier</h3>
-          <p class="slogan__subtitle">We believe that delivering prescriptions to patients should be easy, and it's our job to
-            help pharmacies and patients do just that.</p>
-          <button class="slogan__button button button--white">Get Quote</button>
-          <img src="./img/lap.png" alt="">
+          <div class="container slogan__flex-container">
+            <div class="slogan__block-1">
+              <h3 class="slogan__title title-3 title-3--big">Make your job easier</h3>
+              <p class="slogan__subtitle">We believe that delivering prescriptions to patients should be easy, and it's our job to
+                help pharmacies and patients do just that.</p>
+              <button class="slogan__button button button--white">Get Quote</button>
+            </div>
+            <img src="./img/lap.png" alt="">
+          </div>
         </section>
     </main>
     <footer class="page-footer" id="contacts">
-      <a class="page-footer__logo-link">
-        <img class="page-footer__logo" src="./img/logo.svg" alt="Logotype Rx4Route">
-      </a>
-      <p class="page-footer__text">Our platform is designed to streamline your business operations, saving you time and money.</p>
-      <nav class="page-footer__menu">
-        <div class="page-footer__menu-container">
-          <p class="page-footer__menu-title">Menu</p>
-          <ul class="page-footer__list">
-            <li class="page-footer__item">
-              <a href="#" class="page-footer__link">About us</a>
-            </li>
-            <li class="page-footer__item">
-              <a href="#" class="page-footer__link">How it works</a>
-            </li>
-            <li class="page-footer__item">
-              <a href="#" class="page-footer__link">Features</a>
-            </li>
-            <li class="page-footer__item">
-              <a href="#" class="page-footer__link">Contacts</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="page-footer__flex-container">
+          <div class="page-footer__block-1">
+            <a class="page-footer__logo-link">
+              <img class="page-footer__logo" src="./img/logo.svg" alt="Logotype Rx4Route">
+            </a>
+            <p class="page-footer__text">Our platform is designed to streamline your business operations, saving you time and money.</p>
+          </div>
+          <nav class="page-footer__menu">
+            <div class="page-footer__menu-container">
+              <p class="page-footer__menu-title">Menu</p>
+              <ul class="page-footer__list">
+                <li class="page-footer__item">
+                  <a href="#" class="page-footer__link">About us</a>
+                </li>
+                <li class="page-footer__item">
+                  <a href="#" class="page-footer__link">How it works</a>
+                </li>
+                <li class="page-footer__item">
+                  <a href="#" class="page-footer__link">Features</a>
+                </li>
+                <li class="page-footer__item">
+                  <a href="#" class="page-footer__link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__menu-container">
+              <p class="page-footer__menu-title">Contacts</p>
+              <address>
+                <a class="page-footer__address-link" href="mailto:info@rx4route.com" aria-label="Write to us">info@rx4route.com</a>
+                <a class="page-footer__address-link" href="tel:+14540000000">+1 (454) 000 00 00</a>
+                <p class="page-footer__address">
+                  248 Bridge St, Metuchen, NJ 08840
+                </p>
+              </address>
+            </div>
+          </nav>
         </div>
-        <div class="page-footer__menu-container">
-          <p class="page-footer__menu-title">Contacts</p>
-          <address>
-            <a class="page-footer__address-link" href="mailto:info@rx4route.com" aria-label="Write to us">info@rx4route.com</a>
-            <a class="page-footer__address-link" href="tel:+14540000000">+1 (454) 000 00 00</a>
-            <p class="page-footer__address">
-              248 Bridge St, Metuchen, NJ 08840
-            </p>
-          </address>
-        </div>
-      </nav>
-      <p class="page-footer__copyright">All rights reserved (c) 2023 Rx4Route LLC.</p>
+        <p class="page-footer__copyright">All rights reserved (c) 2023 Rx4Route LLC.</p>
+      </div>
     </footer>
     <script src="./vendor/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
