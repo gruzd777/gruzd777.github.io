@@ -3,28 +3,28 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local(""), url("../fonts/mulishregular.woff2") format("woff2"), url("../fonts/mulishregular.woff") format("woff");
+  src: local(""), url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local(""), url("../../fonts/mulishbold.woff2") format("woff2"), url("../../fonts/mulishbold.woff") format("woff");
+  src: local(""), url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local(""), url("../../fonts/montserratmedium.woff2") format("woff2"), url("../../fonts/montserratmedium.woff") format("woff");
+  src: local(""), url("../fonts/montserratmedium.woff2") format("woff2"), url("../fonts/montserratmedium.woff") format("woff");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local(""), url("../../fonts/montserratsemibold.woff2") format("woff2"), url("../../fonts/montserratsemibold.woff") format("woff");
+  src: local(""), url("../fonts/montserratsemibold.woff2") format("woff2"), url("../fonts/montserratsemibold.woff") format("woff");
 }
 img {
   max-width: 100%;
@@ -220,6 +220,7 @@ h6 {
 }
 
 .page-body {
+  min-width: 414px;
   margin: 0;
   padding: 0;
   font-family: "Mulish", "Arial", sans-serif;
@@ -236,14 +237,22 @@ h6 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .page-body {
+    background: #F5FFFC url("../img/background-desk.png") no-repeat left center;
+  }
+}
 
 .page-header {
-  background-color: #F5FFFC;
   padding-top: 32px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 24px;
   overflow: hidden;
+}
+
+.page-header--white {
+  background-color: #ffffff;
 }
 
 .page-header--menu-oppened {
@@ -338,6 +347,11 @@ h6 {
   .page-header {
     padding-left: 60px;
     padding-right: 60px;
+    background-color: transparent;
+  }
+
+  .page-header--white {
+    background-color: #ffffff;
   }
 }
 @media (min-width: 1280px) {
@@ -468,7 +482,7 @@ h6 {
 
   .page-footer__text {
     font-size: 16px;
-    width: 300px;
+    width: 316px;
   }
 
   .page-footer__menu-container:first-child {
@@ -585,7 +599,7 @@ h6 {
 
 .promo__text {
   margin: 0 auto 24px;
-  max-width: 310px;
+  max-width: 340px;
   text-align: center;
   font-size: 16px;
   line-height: 130%;
@@ -620,7 +634,7 @@ h6 {
   }
 
   .promo__text {
-    max-width: 510px;
+    max-width: 552px;
     font-size: 18px;
   }
 
@@ -649,7 +663,7 @@ h6 {
   }
 
   .promo__text {
-    width: 375px;
+    width: 431px;
     text-align: left;
     margin: 0 0 24px 0;
     font-family: Mulish;
@@ -721,7 +735,7 @@ h6 {
   height: 194px;
   background: #76E3D4;
   transform: rotate(-5deg);
-  z-index: 5;
+  z-index: 100;
 }
 
 .subpromo__card--second {
@@ -744,11 +758,11 @@ h6 {
 }
 
 .subpromo__card-text--first {
-  width: 120px;
+  width: 124px;
 }
 
 .subpromo__card-text--second {
-  width: 185px;
+  width: 197px;
 }
 
 @media (min-width: 768px) {
@@ -765,7 +779,7 @@ h6 {
   .subpromo__text {
     margin: 0 auto 24px;
     text-align: center;
-    max-width: 460px;
+    max-width: 482px;
   }
 
   .subpromo__text--second {
@@ -788,7 +802,7 @@ h6 {
     font-family: Mulish;
     font-size: 18px;
     line-height: 130%;
-    max-width: 465px;
+    max-width: 541px;
     text-align: left;
     margin: 0 0 24px 0;
   }
@@ -831,7 +845,7 @@ h6 {
   }
 
   .subpromo__card-text--second {
-    width: 170px;
+    width: 215px;
   }
 }
 .title-2 {
@@ -957,7 +971,7 @@ h6 {
     line-height: 130%;
     text-align: left;
     margin: 0 0 24px 0;
-    max-width: 465px;
+    max-width: 537px;
   }
 
   .test-drive__button {
@@ -967,6 +981,7 @@ h6 {
 
   .test-drive__block-1 {
     margin-left: 48px;
+    padding-top: 60px;
   }
 
   .test-drive__flex-container {
@@ -1014,6 +1029,10 @@ h6 {
 .why__description {
   max-width: 400px;
   margin: 0 0 24px 0;
+}
+
+.why__description--timely {
+  max-width: 340px;
 }
 
 .why__map {
@@ -1257,19 +1276,24 @@ h6 {
   }
 
   .why__subtitle {
-    max-width: 480px;
+    max-width: 482px;
     margin-bottom: 68px;
     line-height: 130%;
   }
 
   .why__description {
-    width: 395px;
+    width: 399px;
     font-size: 18px;
     line-height: 130%;
   }
 
   .why__description--even {
     margin-left: auto;
+  }
+
+  .why__description--privacy {
+    max-width: 450px;
+    width: 477px;
   }
 
   .why__map {
@@ -1289,11 +1313,12 @@ h6 {
 
   .why__item-title--even {
     margin-left: auto;
-    width: 395px;
+    width: 399px;
   }
 
   .why__item-title--privacy {
     display: block;
+    width: 451px;
   }
 
   .why__svg-container {
@@ -1353,31 +1378,32 @@ h6 {
   }
 
   .why__subtitle {
-    max-width: 560px;
+    max-width: 638px;
     font-family: Mulish;
     font-size: 18px;
     margin-bottom: 120px;
   }
 
   .why__description {
-    width: 390px;
+    max-width: 460px;
+    width: 431px;
     font-family: Mulish;
   }
 
   .why__description--realtime {
-    width: 375px;
+    width: 423px;
   }
 
   .why__description--scale {
-    width: 355px;
+    width: 431px;
   }
 
   .why__description--privacy {
-    width: 387px;
+    width: 452px;
   }
 
   .why__description--timely {
-    width: 365px;
+    width: 430px;
   }
 
   .why__item {
@@ -1395,11 +1421,11 @@ h6 {
   }
 
   .why__item-title--realtime {
-    width: 375px;
+    width: 423px;
   }
 
   .why__item-title--privacy {
-    width: 387px;
+    width: 452px;
   }
 
   .why__map--moderntech {
@@ -1501,7 +1527,7 @@ h6 {
     text-align: left;
     font-family: Mulish;
     font-size: 18px;
-    max-width: 375px;
+    max-width: 444px;
     margin: 0 0 24px 0;
   }
 
@@ -1536,7 +1562,7 @@ h6 {
 
 .subpromo-slider__title {
   max-width: 382px;
-  margin: 0 auto 74px;
+  margin: 0 auto 54px;
   text-align: center;
 }
 
@@ -1566,6 +1592,10 @@ h6 {
   }
 }
 @media (min-width: 1280px) {
+  .subpromo-slider {
+    background: #190C39 url("../img/ellipse-desk.png") no-repeat center bottom;
+  }
+
   .subpromo-slider__title {
     max-width: 880px;
   }
@@ -1778,7 +1808,7 @@ h6 {
   padding: 20px 23px;
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
