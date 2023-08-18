@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./vendor/swiper.css">
     <link rel="stylesheet" href="./css/style.min.css">
-    <!-- <link rel="preload" href="./fonts/jost-extrabold.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/jost-extrabold.woff2" as="font" type="font/woff2"crossorigin="anonymous">
-    <link rel="preload" href="./fonts/jost-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/jost-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <link rel="preload" as="image" href="./img/background.webp">
+    <link rel="preload" as="image" href="./img/background-desk.webp">
+    <link rel="preload" href="./fonts/Mulish-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Mulish-Bold.woff2" as="font" type="font/woff2"crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Mulish-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Mulish-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>Rx4Route</title>
   </head>
   <body class="page-body">
@@ -48,8 +50,8 @@
     </header>
     <main class="page-main">
         <section class="promo container">
-          <h1 class="promo__title">Expand your pharmacy with Rx4Route</h1>
-          <p class="promo__text">Introducing Rx4Route: The cutting-edge delivery software for pharmacies. Real-time tracking, door picture verification, and efficient routes. Elevate your prescription delivery service today.</p>
+          <h1 class="promo__title hoisting-text--start hoisting-text">Expand your pharmacy with Rx4Route</h1>
+          <p class="promo__text hoisting-text--start hoisting-text">Introducing Rx4Route: The cutting-edge delivery software for pharmacies. Real-time tracking, door picture verification, and efficient routes. Elevate your prescription delivery service today.</p>
           <button class="promo__button button button--dark" type="button">Get Quote</button>
           <picture>
             <source type="image/webp" srcset="./img/promo-desktop@3x.webp">
@@ -162,171 +164,183 @@
                 </div>
               </div>
               <ul class="service-features__slider service-slider">
-                  <li class="service-slider__item">
-                    <div class="swiper slider">
-                      <ul class="slider__container slider__pharmacies swiper-wrapper">
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--sky">
-                              <h4 class="slider-item__title title-4">Driver Management</h4>
-                              <p class="slider-item__text">Easily manage your driver capacity and schedules through our intuitive platform. Assign deliveries based on driver availability and proximity, ensuring optimized resource allocation and timely prescription deliveries.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/pharmacies/driver-management.webp 1x, ./img/slide-features/pharmacies/driver-management@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/pharmacies/driver-management.jpg" srcset="./img/slide-features/pharmacies/driver-management@2x.jpg 2x" alt="Driver Management">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--pistachios">
-                              <h4 class="slider-item__title title-4">Seamless Integration</h4>
-                              <p class="slider-item__text">Connect Rx4Route with your existing pharmacy Information and Prescription Systems (IPS) effortlessly, without disrupting your workflow. Our software integrates smoothly, ensuring a hassle-free transition.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/pharmacies/seamless-integration.webp 1x, ./img/slide-features/pharmacies/seamless-integration@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/pharmacies/seamless-integration.jpg" srcset="./img/slide-features/pharmacies/seamless-integration@2x.jpg 2x" alt="Seamless Integration">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--violet">
-                              <h4 class="slider-item__title title-4">Route Optimization</h4>
-                              <p class="slider-item__text">Maximize efficiency by leveraging our advanced route optimization algorithms. Rx4Route calculates the most efficient delivery routes for your drivers, reducing travel time and costs while improving overall delivery speed.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/pharmacies/route-optimization.webp 1x, ./img/slide-features/pharmacies/route-optimization@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/pharmacies/route-optimization.jpg" srcset="./img/slide-features/pharmacies/route-optimization@2x.jpg 2x" alt="Route Optimization">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--pistachios">
-                              <h4 class="slider-item__title title-4">Driver Management</h4>
-                              <p class="slider-item__text">Easily manage your driver capacity and schedules through our intuitive platform. Assign deliveries based on driver availability and proximity, ensuring optimized resource allocation and timely prescription deliveries.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/pharmacies/driver-management-1.webp 1x, ./img/slide-features/pharmacies/driver-management-1@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/pharmacies/driver-management-1.jpg" srcset="./img/slide-features/pharmacies/driver-management-1@2x.jpg 2x" alt="Driver Management">
-                              </picture>
-                            </div>
-                          </li>
-                      </ul>
-                      <div class="pagination pagination__slider-phar swiper__pagination"></div>
-                    </div>
-                  </li>
-                  <li class="service-slider__item">
-                    <div class="swiper slider">
-                      <ul class="slider__container slider__pharmacies swiper-wrapper">
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--pistachios">
-                              <h4 class="slider-item__title title-4">Simplified Route Navigation</h4>
-                              <p class="slider-item__text">Rx4Route provides drivers with realtime route guidance, helping them navigate efficiently from one destination to another. Optimize your driving routes and reach patients quickly, saving time and fuel.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/drivers/smart-service-features.webp 1x, ./img/slide-features/drivers/smart-service-features@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/drivers/smart-service-features.jpg" srcset="./img/slide-features/drivers/smart-service-features@2x.jpg 2x" alt="Simplified Route Navigation">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--violet">
-                              <h4 class="slider-item__title title-4">Instant Order Notifications</h4>
-                              <p class="slider-item__text">Drivers receive instant notifications on their app whenever a new delivery order is assigned to them. This feature ensures drivers are always up-to-date with their schedule and can promptly begin their next delivery.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/drivers/instant-order-notifications.webp 1x, ./img/slide-features/drivers/instant-order-notifications@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/drivers/instant-order-notifications.jpg" srcset="./img/slide-features/drivers/instant-order-notifications@2x.jpg 2x" alt="Instant Order Notifications">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--sky">
-                              <h4 class="slider-item__title title-4">Real-time Navigation</h4>
-                              <p class="slider-item__text">Our integrated GPS navigation system guides drivers throughout the entire delivery journey. Drivers can rely on turn-by-turn directions and real-time traffic updates to navigate the best route and avoid potential delays.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/drivers/real-time-navigation.webp 1x, ./img/slide-features/drivers/real-time-navigation@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/drivers/real-time-navigation.jpg" srcset="./img/slide-features/drivers/real-time-navigation@2x.jpg 2x" alt="Real-time Navigation">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--pistachios">
-                              <h4 class="slider-item__title title-4">Intuitive Mobile App</h4>
-                              <p class="slider-item__text">Our dedicated mobile app is designed with drivers in mind. It provides a straightforward interface that allows drivers to access all essential information, including delivery details, customer addresses, and real-time updates, right at their fingertips.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/drivers/intuitive-mobile-app.webp 1x, ./img/slide-features/drivers/intuitive-mobile-app@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/drivers/intuitive-mobile-app.jpg" srcset="./img/slide-features/drivers/intuitive-mobile-app@2x.jpg 2x" alt="Intuitive Mobile App">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--violet">
-                              <h4 class="slider-item__title title-4">Efficient Route Planning</h4>
-                              <p class="slider-item__text">Say goodbye to guesswork and time-consuming route planning. Our software automatically generates optimized delivery routes, ensuring drivers take the most efficient path to complete their deliveries promptly.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/drivers/efficient-route-planning.webp 1x, ./img/slide-features/drivers/efficient-route-planning@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/drivers/efficient-route-planning.jpg" srcset="./img/slide-features/drivers/efficient-route-planning@2x.jpg 2x" alt="Efficient Route Planning">
-                              </picture>
-                            </div>
-                          </li>
-                      </ul>
-                      <div class="pagination pagination__slider-phar swiper__pagination"></div>
-                    </div>
-                  </li>
-                  <li class="service-slider__item">
-                    <div class="swiper slider">
-                      <ul class="slider__container slider__pharmacies swiper-wrapper">
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--violet">
-                              <h4 class="slider-item__title title-4">Customer Communication</h4>
-                              <p class="slider-item__text">Enhance patient satisfaction with our text message system. As you dispatch orders, patients receive instant alerts and detailed delivery instructions, ensuring seamless coordination and elevating your service standard</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/patients/customer-communication.webp 1x, ./img/slide-features/patients/customer-communication@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/patients/customer-communication.jpg" srcset="./img/slide-features/patients/customer-communication@2x.jpg 2x" alt="Customer Communication">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--pistachios">
-                              <h4 class="slider-item__title title-4">Delivery Status Updates</h4>
-                              <p class="slider-item__text">Keep customers informed and satisfied with timely delivery status updates. Our software allows drivers to send automatic notifications to customers, ensuring they are aware of their order&#x27;s progress.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/patients/delivery-status-updates.webp 1x, ./img/slide-features/patients/delivery-status-updates@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/patients/delivery-status-updates.jpg" srcset="./img/slide-features/patients/delivery-status-updates@2x.jpg 2x" alt="Delivery Status Updates">
-                              </picture>
-                            </div>
-                          </li>
-                          <li class="slider__item slider-item swiper-slide">
-                            <div class="slider-item__description slider-item__description--sky">
-                              <h4 class="slider-item__title title-4">Electronic Proof of Delivery</h4>
-                              <p class="slider-item__text">Our ePOD feature enables drivers to record essential delivery details, including customer signatures, delivery timestamps, and any additional notes. This digital record enhances transparency and simplifies proof of delivery documentation.</p>
-                            </div>
-                            <div class="slider-item__picture">
-                              <picture>
-                                <source type="image/webp" srcset="./img/slide-features/patients/electronic-proof-of-delivery.webp 1x, ./img/slide-features/patients/electronic-proof-of-delivery@2x.webp 2x">
-                                <img class="slider-item__pic" src="./img/slide-features/patients/electronic-proof-of-delivery.jpg" srcset="./img/slide-features/patients/electronic-proof-of-delivery@2x.jpg 2x" alt="Electronic Proof of Delivery">
-                              </picture>
-                            </div>
-                          </li>
-                      </ul>
-                      <div class="pagination pagination__slider-phar swiper__pagination"></div>
-                    </div>
-                  </li>
+                <li class="service-slider__item">
+                  <div class="simple-swiper swiper slider">
+                    <ul class="slider__container slider__pharmacies swiper-wrapper">
+                      <li class="slider__item slider-item swiper-slide">
+                        <div class="slider-item__description slider-item__description--sky">
+                          <h4 class="slider-item__title title-4">Driver Management</h4>
+                          <p class="slider-item__text">Easily manage your driver capacity and schedules through our intuitive platform. Assign deliveries based on driver availability and proximity, ensuring optimized resource allocation and timely prescription deliveries.</p>
+                        </div>
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/pharmacies/driver-management.webp 1x, ./img/slide-features/pharmacies/driver-management@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/pharmacies/driver-management.jpg" srcset="./img/slide-features/pharmacies/driver-management@2x.jpg 2x"
+                              alt="Driver Management">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <div class="slider-item__description slider-item__description--pistachios">
+                          <h4 class="slider-item__title title-4">Seamless Integration</h4>
+                          <p class="slider-item__text">Connect Rx4Route with your existing pharmacy Information and Prescription Systems (IPS) effortlessly, without disrupting your workflow. Our software integrates smoothly, ensuring a hassle-free transition.</p>
+                        </div>
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/pharmacies/seamless-integration.webp 1x, ./img/slide-features/pharmacies/seamless-integration@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/pharmacies/seamless-integration.jpg" srcset="./img/slide-features/pharmacies/seamless-integration@2x.jpg 2x"
+                              alt="Seamless Integration">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <div class="slider-item__description slider-item__description--violet">
+                          <h4 class="slider-item__title title-4">Route Optimization</h4>
+                          <p class="slider-item__text">Maximize efficiency by leveraging our advanced route optimization algorithms. Rx4Route calculates the most efficient delivery routes for your drivers, reducing travel time and costs while improving overall delivery speed.</p>
+                        </div>
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/pharmacies/route-optimization.webp 1x, ./img/slide-features/pharmacies/route-optimization@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/pharmacies/route-optimization.jpg" srcset="./img/slide-features/pharmacies/route-optimization@2x.jpg 2x"
+                              alt="Route Optimization">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <div class="slider-item__description slider-item__description--pistachios">
+                          <h4 class="slider-item__title title-4">Driver Management</h4>
+                          <p class="slider-item__text">Easily manage your driver capacity and schedules through our intuitive platform. Assign deliveries based on driver availability and proximity, ensuring optimized resource allocation and timely prescription deliveries.</p>
+                        </div>
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/pharmacies/driver-management-1.webp 1x, ./img/slide-features/pharmacies/driver-management-1@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/pharmacies/driver-management-1.jpg" srcset="./img/slide-features/pharmacies/driver-management-1@2x.jpg 2x"
+                              alt="Driver Management">
+                          </picture>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="pagination pagination__slider-phar swiper__pagination"></div>
+                  </div>
+                </li>
+                <li class="service-slider__item">
+                  <div class="phone-swiper swiper slider">
+                    <ul class="slider__container swiper-wrapper">
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--pistachios">
+                          <h4 class="slider-item__title title-4">Simplified Route Navigation</h4>
+                          <p class="slider-item__text">Rx4Route provides drivers with realtime route guidance, helping them navigate efficiently from one destination to another. Optimize your driving routes and reach patients quickly, saving time and fuel.</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-smart-service-features.webp 1x, ./img/slide-features/drivers/phones/phone-smart-service-features@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-smart-service-features.jpg" srcset="./img/slide-features/drivers/phones/phone-smart-service-features@2x.jpg 2x"
+                              alt="Simplified Route Navigation">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--violet">
+                          <h4 class="slider-item__title title-4">Instant Order Notifications</h4>
+                          <p class="slider-item__text">Drivers receive instant notifications on their app whenever a new delivery order is assigned to them. This feature ensures drivers are always up-to-date with their schedule and can promptly begin their next delivery.</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-instant-order-notifications.webp 1x, ./img/slide-features/drivers/phones/phone-instant-order-notifications@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-instant-order-notifications.jpg" srcset="./img/slide-features/drivers/phones/phone-instant-order-notifications@2x.jpg 2x"
+                              alt="Instant Order Notifications">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--sky">
+                          <h4 class="slider-item__title title-4">Real-time Navigation</h4>
+                          <p class="slider-item__text">Our integrated GPS navigation system guides drivers throughout the entire delivery journey. Drivers can rely on turn-by-turn directions and real-time traffic updates to navigate the best route and avoid potential delays.</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-real-time-navigation.webp 1x, ./img/slide-features/drivers/phones/phone-real-time-navigation@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-real-time-navigation.jpg" srcset="./img/slide-features/drivers/phones/phone-real-time-navigation@2x.jpg 2x"
+                              alt="Real-time Navigation">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--pistachios">
+                          <h4 class="slider-item__title title-4">Intuitive Mobile App</h4>
+                          <p class="slider-item__text">Our dedicated mobile app is designed with drivers in mind. It provides a straightforward interface that allows drivers to access all essential information, including delivery details, customer addresses, and real-time updates, right at their fingertips.</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-intuitive-mobile-app.webp 1x, ./img/slide-features/drivers/phones/phone-intuitive-mobile-app@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-intuitive-mobile-app.jpg" srcset="./img/slide-features/drivers/phones/phone-intuitive-mobile-app@2x.jpg 2x"
+                              alt="Intuitive Mobile App">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--violet">
+                          <h4 class="slider-item__title title-4">Efficient Route Planning</h4>
+                          <p class="slider-item__text">Say goodbye to guesswork and time-consuming route planning. Our software automatically generates optimized delivery routes, ensuring drivers take the most efficient path to complete their deliveries promptly.</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-efficient-route-planning.webp 1x, ./img/slide-features/drivers/phones/phone-efficient-route-planning@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-efficient-route-planning.jpg" srcset="./img/slide-features/drivers/phones/phone-efficient-route-planning@2x.jpg 2x"
+                              alt="Efficient Route Planning">
+                          </picture>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="pagination pagination__slider-phar swiper__pagination"></div>
+                  </div>
+                </li>
+                <li class="service-slider__item">
+                  <div class="phone-swiper swiper slider">
+                    <ul class="slider__container swiper-wrapper">
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--violet">
+                          <h4 class="slider-item__title title-4">Customer Communication</h4>
+                          <p class="slider-item__text">Enhance patient satisfaction with our text message system. As you dispatch orders, patients receive instant alerts and detailed delivery instructions, ensuring seamless coordination and elevating your service standard</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/patients/phones/phone-customer-communication.webp 1x, ./img/slide-features/patients/phones/phone-customer-communication@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/patients/phones/phone-customer-communication.jpg" srcset="./img/slide-features/patients/phones/phone-customer-communication@2x.jpg 2x"
+                              alt="Customer Communication">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--pistachios">
+                          <h4 class="slider-item__title title-4">Delivery Status Updates</h4>
+                          <p class="slider-item__text">Keep customers informed and satisfied with timely delivery status updates. Our software allows drivers to send automatic notifications to customers, ensuring they are aware of their order&#x27;s progress.</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/patients/phones/phone-delivery-status-updates.webp 1x, ./img/slide-features/patients/phones/phone-delivery-status-updates@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/patients/phones/phone-delivery-status-updates.jpg" srcset="./img/slide-features/patients/phones/phone-delivery-status-updates@2x.jpg 2x"
+                              alt="Delivery Status Updates">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="slider__item slider-item swiper-slide">
+                        <!-- <div class="slider-item__description slider-item__description--sky">
+                          <h4 class="slider-item__title title-4">Electronic Proof of Delivery</h4>
+                          <p class="slider-item__text">Our ePOD feature enables drivers to record essential delivery details, including customer signatures, delivery timestamps, and any additional notes. This digital record enhances transparency and simplifies proof of delivery documentation.</p>
+                        </div> -->
+                        <div class="slider-item__picture">
+                          <picture>
+                            <source type="image/webp" srcset="./img/slide-features/patients/phones/phone-electronic-proof-of-delivery.webp 1x, ./img/slide-features/patients/phones/phone-electronic-proof-of-delivery@2x.webp 2x">
+                            <img class="slider-item__pic" src="./img/slide-features/patients/phones/phone-electronic-proof-of-delivery.jpg" srcset="./img/slide-features/patients/phones/phone-electronic-proof-of-delivery@2x.jpg 2x"
+                              alt="Electronic Proof of Delivery">
+                          </picture>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="pagination pagination__slider-phar swiper__pagination"></div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -368,32 +382,6 @@
                   <img class="why__pic" src="./img/map-big.png" alt="Map">
                   <img class="why__pic-driver hoisting__element hoisting__element--not-visible" src="./img/driver.svg" alt="">
                   <img class="why__pic-time hoisting__element hoisting__element--not-visible" src="./img/time.svg" alt="">
-                  <!-- <div class="why__widget-time hoisting__element hoisting__element--not-visible">
-                    <h5 class="why__widget-title">ETA:</h5>
-                    <p class="why__widget-text">02:01 PM</p>
-                    <h5 class="why__widget-title">The driver will be:</h5>
-                    <p class="why__widget-text why__widget-text--bg">~45 min</p>
-                    <h5 class="why__widget-title">Stops before order:</h5>
-                    <p class="why__widget-text why__widget-text--bg">2</p>
-                  </div> -->
-                  <!-- <div class="why__widget-name hoisting__element hoisting__element--not-visible">
-                    <div class="why__widget-first-block">
-                      <img src="./img/boy.png" width="50" height="50" alt="">
-                      <span><svg width="12" height="12">
-                        <use href="./img/sprite.svg#star"></use>
-                      </svg>5</span>
-                    </div>
-                    <div class="why__widget-second-block">
-                      <p class="why__widget-text why__widget-text--white">Driver assigned<svg width="12" height="12">
-                        <use href="./img/sprite.svg#check"></use>
-                      </svg>
-                    </p>
-                    </div>
-                    <div class="why__widget-third-block">
-                      <p class="why__widget-title">Name:</p>
-                      <p class="why__widget-text">Matt Silberstein</p>
-                    </div>
-                  </div> -->
                 </div>
               </li>
               <li class="why__item why__item--scale">
@@ -402,28 +390,20 @@
                   <div class="why__map why__map--scale why__map--bg hoist">
                     <img src="./img/newlaptop.png" alt="">
                     <div class="why__svg-container why__svg-container--primerx hoisting__element hoisting__element--not-visible">
-                      <img class="why__map-svg why__map-svg--primerx" src="./img/softs/primerx.svg">
+                      <img class="why__map-svg why__map-svg--primerx" src="./img/softs/primerx.svg" alt="">
                     </div>
                     <div class="why__svg-container why__svg-container--datascan hoisting__element hoisting__element--datascan hoisting__element--not-visible">
-                      <img class="why__map-svg why__map-svg--datascan" src="./img/softs/datascan.svg">
+                      <img class="why__map-svg why__map-svg--datascan" src="./img/softs/datascan.svg" alt="">
                     </div>
                     <div class="why__svg-container why__svg-container--pioneerrx hoisting__element hoisting__element--pionerrx hoisting__element--not-visible">
-                      <img class="why__map-svg why__map-svg--pioneerrx" src="./img/softs/pioneerrx.svg">
+                      <img class="why__map-svg why__map-svg--pioneerrx" src="./img/softs/pioneerrx.svg" alt="">
                     </div>
                     <div class="why__svg-container why__svg-container--suitrx hoisting__element hoisting__element--suitrx hoisting__element--not-visible">
-                      <img class="why__map-svg why__map-svg--suitrx" src="./img/softs/suiterx.svg">
+                      <img class="why__map-svg why__map-svg--suitrx" src="./img/softs/suiterx.svg" alt="">
                     </div>
                     <div class="why__svg-container why__svg-container--pksoftware hoisting__element hoisting__element--pksoftware hoisting__element--not-visible">
-                      <img class="why__map-svg why__map-svg--pksoftware" src="./img/softs/pksoftware.svg">
+                      <img class="why__map-svg why__map-svg--pksoftware" src="./img/softs/pksoftware.svg" alt="">
                     </div>
-        
-                    <!-- <img src="./img/real-time-map.png" alt="">
-                    <div class="why__bundl hoisting__element hoisting__element--not-visible">
-                      <svg width="40" height="49">
-                        <use href="./img/sprite.svg#bundl"></use>
-                      </svg>
-                      <p class="why__bundl-text">track the status and delivery location of your recipes.</p>
-                    </div> -->
                   </div>
               </li>
               <li class="why__item">
