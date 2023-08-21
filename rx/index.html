@@ -152,14 +152,22 @@
           </section></div>
         <section class="service-features" id="service">
           <div class="service-features__wrapper">
-            <h2 class="service-features__title title-2">Service features</h2>
+            <h2 class="service-features__title title-2">
+              Service features <span class="only only--mobile"> for...</span>
+            </h2>
             <div class="service-features__container">
               <div class="service-features__buttons-container push-right">
                 <div class="service-features__buttons-wrapper">
                   <div class="service-features__buttons">
-                    <button class="service-features__button button button--squared active" type="button">For Pharmacies</button>
-                    <button class="service-features__button button button--squared" type="button">For Drivers</button>
-                    <button class="service-features__button button button--squared" type="button">For Patients</button>
+                    <button class="service-features__button button button--squared active" type="button">
+                      <span class="only only--tablet">For </span> Pharmacies
+                    </button>
+                    <button class="service-features__button button button--squared" type="button">
+                      <span class="only only--tablet">For </span> Drivers
+                    </button>
+                    <button class="service-features__button button button--squared" type="button">
+                      <span class="only only--tablet">For </span> Patients
+                    </button>
                   </div>
                 </div>
               </div>
@@ -224,121 +232,91 @@
                   </div>
                 </li>
                 <li class="service-slider__item">
-                  <div class="phone-swiper swiper slider">
-                    <ul class="slider__container swiper-wrapper">
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--pistachios">
-                          <h4 class="slider-item__title title-4">Simplified Route Navigation</h4>
-                          <p class="slider-item__text">Rx4Route provides drivers with realtime route guidance, helping them navigate efficiently from one destination to another. Optimize your driving routes and reach patients quickly, saving time and fuel.</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-smart-service-features.webp 1x, ./img/slide-features/drivers/phones/phone-smart-service-features@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-smart-service-features.jpg" srcset="./img/slide-features/drivers/phones/phone-smart-service-features@2x.jpg 2x"
-                              alt="Simplified Route Navigation">
-                          </picture>
-                        </div>
+                  <div class="phone-slider">
+                    <ul class="phone-slider__text-block phone-texts text-first">
+                      <li class="phone-texts__item phone-texts__item--pistachios">
+                        <h4 class="phone-texts__title title-4">Simplified Route Navigation</h4>
+                        <p class="phone-texts__text">Rx4Route provides drivers with realtime route guidance, helping them navigate efficiently from one destination to another. Optimize your driving routes and reach patients quickly, saving time and fuel.</p>
                       </li>
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--violet">
-                          <h4 class="slider-item__title title-4">Instant Order Notifications</h4>
-                          <p class="slider-item__text">Drivers receive instant notifications on their app whenever a new delivery order is assigned to them. This feature ensures drivers are always up-to-date with their schedule and can promptly begin their next delivery.</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-instant-order-notifications.webp 1x, ./img/slide-features/drivers/phones/phone-instant-order-notifications@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-instant-order-notifications.jpg" srcset="./img/slide-features/drivers/phones/phone-instant-order-notifications@2x.jpg 2x"
-                              alt="Instant Order Notifications">
-                          </picture>
-                        </div>
+                      <li class="phone-texts__item phone-texts__item--violet">
+                        <h4 class="phone-texts__title title-4">Instant Order Notifications</h4>
+                        <p class="phone-texts__text">Drivers receive instant notifications on their app whenever a new delivery order is assigned to them. This feature ensures drivers are always up-to-date with their schedule and can promptly begin their next delivery.</p>
                       </li>
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--sky">
-                          <h4 class="slider-item__title title-4">Real-time Navigation</h4>
-                          <p class="slider-item__text">Our integrated GPS navigation system guides drivers throughout the entire delivery journey. Drivers can rely on turn-by-turn directions and real-time traffic updates to navigate the best route and avoid potential delays.</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-real-time-navigation.webp 1x, ./img/slide-features/drivers/phones/phone-real-time-navigation@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-real-time-navigation.jpg" srcset="./img/slide-features/drivers/phones/phone-real-time-navigation@2x.jpg 2x"
-                              alt="Real-time Navigation">
-                          </picture>
-                        </div>
+                      <li class="phone-texts__item phone-texts__item--sky">
+                        <h4 class="phone-texts__title title-4">Real-time Navigation</h4>
+                        <p class="phone-texts__text">Our integrated GPS navigation system guides drivers throughout the entire delivery journey. Drivers can rely on turn-by-turn directions and real-time traffic updates to navigate the best route and avoid potential delays.</p>
                       </li>
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--pistachios">
-                          <h4 class="slider-item__title title-4">Intuitive Mobile App</h4>
-                          <p class="slider-item__text">Our dedicated mobile app is designed with drivers in mind. It provides a straightforward interface that allows drivers to access all essential information, including delivery details, customer addresses, and real-time updates, right at their fingertips.</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-intuitive-mobile-app.webp 1x, ./img/slide-features/drivers/phones/phone-intuitive-mobile-app@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-intuitive-mobile-app.jpg" srcset="./img/slide-features/drivers/phones/phone-intuitive-mobile-app@2x.jpg 2x"
-                              alt="Intuitive Mobile App">
-                          </picture>
-                        </div>
+                      <li class="phone-texts__item phone-texts__item--pistachios">
+                        <h4 class="phone-texts__title title-4">Intuitive Mobile App</h4>
+                        <p class="phone-texts__text">Our dedicated mobile app is designed with drivers in mind. It provides a straightforward interface that allows drivers to access all essential information, including delivery details, customer addresses, and real-time updates, right at their fingertips.</p>
                       </li>
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--violet">
-                          <h4 class="slider-item__title title-4">Efficient Route Planning</h4>
-                          <p class="slider-item__text">Say goodbye to guesswork and time-consuming route planning. Our software automatically generates optimized delivery routes, ensuring drivers take the most efficient path to complete their deliveries promptly.</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/drivers/phones/phone-efficient-route-planning.webp 1x, ./img/slide-features/drivers/phones/phone-efficient-route-planning@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/drivers/phones/phone-efficient-route-planning.jpg" srcset="./img/slide-features/drivers/phones/phone-efficient-route-planning@2x.jpg 2x"
-                              alt="Efficient Route Planning">
-                          </picture>
-                        </div>
+                      <li class="phone-texts__item phone-texts__item--violet">
+                        <h4 class="phone-texts__title title-4">Efficient Route Planning</h4>
+                        <p class="phone-texts__text">Say goodbye to guesswork and time-consuming route planning. Our software automatically generates optimized delivery routes, ensuring drivers take the most efficient path to complete their deliveries promptly.</p>
                       </li>
                     </ul>
-                    <div class="pagination pagination__slider-phar swiper__pagination"></div>
+                    <div class="phone-slider__swiper phone-swiper" data-text="text-first">
+                      <div class="phone-swiper__wrapper swiper-wrapper">
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/drivers/phones/phone-smart-service-features.svg"
+                              alt="Simplified Route Navigation">
+                        </div>
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/drivers/phones/phone-instant-order-notifications.svg"
+                              alt="Instant Order Notifications">
+                        </div>
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/drivers/phones/phone-real-time-navigation.svg"
+                              alt="Real-time Navigation">
+                        </div>
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/drivers/phones/phone-intuitive-mobile-app.svg"
+                              alt="Intuitive Mobile App">
+                        </div>
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/drivers/phones/phone-efficient-route-planning.svg"
+                              alt="Efficient Route Planning">
+                        </div>
+                      </div>
+                      <div class="pagination phone-slider__pagination swiper__pagination"></div>
+                    </div>
+                   
                   </div>
                 </li>
                 <li class="service-slider__item">
-                  <div class="phone-swiper swiper slider">
-                    <ul class="slider__container swiper-wrapper">
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--violet">
-                          <h4 class="slider-item__title title-4">Customer Communication</h4>
-                          <p class="slider-item__text">Enhance patient satisfaction with our text message system. As you dispatch orders, patients receive instant alerts and detailed delivery instructions, ensuring seamless coordination and elevating your service standard</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/patients/phones/phone-customer-communication.webp 1x, ./img/slide-features/patients/phones/phone-customer-communication@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/patients/phones/phone-customer-communication.jpg" srcset="./img/slide-features/patients/phones/phone-customer-communication@2x.jpg 2x"
-                              alt="Customer Communication">
-                          </picture>
-                        </div>
+                  <div class="phone-slider">
+                    <ul class="phone-slider__text-block phone-texts text-second">
+                      <li class="phone-texts__item phone-texts__item--violet">
+                        <h4 class="phone-texts__title title-4">Customer Communication</h4>
+                        <p class="phone-texts__text">Enhance patient satisfaction with our text message system. As you dispatch orders, patients receive instant alerts and detailed delivery instructions, ensuring seamless coordination and elevating your service standard</p>
                       </li>
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--pistachios">
-                          <h4 class="slider-item__title title-4">Delivery Status Updates</h4>
-                          <p class="slider-item__text">Keep customers informed and satisfied with timely delivery status updates. Our software allows drivers to send automatic notifications to customers, ensuring they are aware of their order&#x27;s progress.</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/patients/phones/phone-delivery-status-updates.webp 1x, ./img/slide-features/patients/phones/phone-delivery-status-updates@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/patients/phones/phone-delivery-status-updates.jpg" srcset="./img/slide-features/patients/phones/phone-delivery-status-updates@2x.jpg 2x"
-                              alt="Delivery Status Updates">
-                          </picture>
-                        </div>
+                      <li class="phone-texts__item phone-texts__item--pistachios">
+                        <h4 class="phone-texts__title title-4">Delivery Status Updates</h4>
+                        <p class="phone-texts__text">Keep customers informed and satisfied with timely delivery status updates. Our software allows drivers to send automatic notifications to customers, ensuring they are aware of their order&#x27;s progress.</p>
                       </li>
-                      <li class="slider__item slider-item swiper-slide">
-                        <!-- <div class="slider-item__description slider-item__description--sky">
-                          <h4 class="slider-item__title title-4">Electronic Proof of Delivery</h4>
-                          <p class="slider-item__text">Our ePOD feature enables drivers to record essential delivery details, including customer signatures, delivery timestamps, and any additional notes. This digital record enhances transparency and simplifies proof of delivery documentation.</p>
-                        </div> -->
-                        <div class="slider-item__picture">
-                          <picture>
-                            <source type="image/webp" srcset="./img/slide-features/patients/phones/phone-electronic-proof-of-delivery.webp 1x, ./img/slide-features/patients/phones/phone-electronic-proof-of-delivery@2x.webp 2x">
-                            <img class="slider-item__pic" src="./img/slide-features/patients/phones/phone-electronic-proof-of-delivery.jpg" srcset="./img/slide-features/patients/phones/phone-electronic-proof-of-delivery@2x.jpg 2x"
-                              alt="Electronic Proof of Delivery">
-                          </picture>
-                        </div>
+                      <li class="phone-texts__item phone-texts__item--sky">
+                        <h4 class="phone-texts__title title-4">Electronic Proof of Delivery</h4>
+                        <p class="phone-texts__text">Our ePOD feature enables drivers to record essential delivery details, including customer signatures, delivery timestamps, and any additional notes. This digital record enhances transparency and simplifies proof of delivery documentation.</p>
                       </li>
                     </ul>
-                    <div class="pagination pagination__slider-phar swiper__pagination"></div>
+                    <div class="phone-slider__swiper phone-swiper" data-text="text-second">
+                      <div class="phone-swiper__wrapper swiper-wrapper">
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/patients/phones/phone-customer-communication.svg"
+                              alt="Customer Communication">
+                        </div>
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/patients/phones/phone-delivery-status-updates.svg"
+                              alt="Delivery Status Updates">
+                        </div>
+                        <div class="swiper-slide phone-swiper__slide">
+                            <img class="phone-swiper__img" src="./img/slide-features/patients/phones/phone-electronic-proof-of-delivery.svg"
+                              alt="Electronic Proof of Delivery">
+                        </div>
+                      </div>
+                      <div class="pagination phone-slider__pagination swiper__pagination"></div>
+                    </div>
+                   
                   </div>
                 </li>
               </ul>
