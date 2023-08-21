@@ -255,8 +255,8 @@ h6 {
   font-size: 16px;
   line-height: 21px;
   background-color: #F5FFFC;
-  background-image: url("../img/background.png");
-  background-position: top center;
+  background-image: url("../img/background-414.svg");
+  background-size: cover;
   color: #171717;
   overflow-x: hidden;
   min-height: 100%;
@@ -265,7 +265,14 @@ h6 {
 }
 @media (min-width: 768px) {
   .page-body {
-    background: #F5FFFC url("../img/background-desk.png") no-repeat left center;
+    background: #F5FFFC url("../img/background-768.svg") no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 1280px) {
+  .page-body {
+    background: #F5FFFC url("../img/background-1280.svg") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -611,7 +618,7 @@ h6 {
 }
 .promo {
   padding: 32px 16px 0 16px;
-  margin-bottom: 57px;
+  margin-bottom: 80px;
 }
 
 .promo__title {
@@ -1618,13 +1625,15 @@ h6 {
 .subpromo-wrapper {
   border-radius: 40px;
   overflow: hidden;
-  background: #190c39;
+  background: #190c39 url("../img/background-spot-light-414.svg") no-repeat 0 0;
+  background-size: cover;
 }
 
 @media (min-width: 1280px) {
   .subpromo-wrapper {
     background: #190c39 url("../img/subpromo-background-t.jpg") no-repeat 0 0;
     background-size: cover;
+    border-radius: 95px;
   }
 }
 .subpromo-slider {
@@ -2030,7 +2039,7 @@ h6 {
   padding: 20px 23px;
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -2185,7 +2194,7 @@ h6 {
 }
 @media (min-width: 768px) {
   .softs {
-    margin-bottom: 32px;
+    margin-bottom: 15px;
   }
 
   .softs__item {
@@ -2196,6 +2205,14 @@ h6 {
 .softs__out {
     font-size: 16px;
     padding: 6px 31px;
+  }
+
+  .softs__center {
+    top: 0;
+  }
+
+  .softs__link {
+    top: 0;
   }
 }
 @media (min-width: 1280px) {
