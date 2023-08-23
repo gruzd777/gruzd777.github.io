@@ -14,9 +14,9 @@ const softs = document.querySelectorAll('.softs__item');
 const serviceFeaturesSection = document.querySelector('.service-features');
 const serviceFeaturesTitle = document.querySelector('.service-features__title');
 const ServiceFeaturesTitles = {
-  PHARMACIES: 'Service features',
+  PHARMACIES: 'Smart service features',
   DRIVERS: 'Smart service features',
-  PATIENTS: 'Service features'
+  PATIENTS: 'Smart service features'
 }
 
 

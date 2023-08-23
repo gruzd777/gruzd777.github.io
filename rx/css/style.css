@@ -117,7 +117,6 @@ h6 {
   background: transparent;
   border: none;
   display: block;
-  font-family: Mulish;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -171,13 +170,18 @@ h6 {
   border-radius: 12px;
   background-color: rgba(136, 113, 246, 0);
   transition: background-color 1s;
+  font-weight: 400;
+  cursor: pointer;
 }
 .button--squared:hover {
   color: #171717;
+  border-color: transparent;
 }
 .button--squared.active {
   background-color: #8871f6;
   color: #ffffff;
+  border-color: transparent;
+  font-weight: 700;
 }
 
 .hoist {
@@ -185,10 +189,14 @@ h6 {
 }
 
 .hoisting__element {
-  transition: all 2s ease-out;
+  transition: all 2.5s ease-out;
   z-index: 10;
   opacity: 1;
   translate: 0 0;
+}
+
+.hoisting__element--main-pic {
+  transition: all 1.5s ease-out;
 }
 
 .hoisting__element--pionerrx {
@@ -628,7 +636,7 @@ h6 {
 }
 
 .promo__title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 42px;
   text-align: center;
   line-height: 110%;
@@ -742,7 +750,6 @@ h6 {
   line-height: 130%;
   margin-bottom: 16px;
   max-width: 485px;
-  font-weight: 300;
 }
 
 .subpromo__text--second {
@@ -913,7 +920,7 @@ h6 {
 }
 .title-3 {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 110%;
 }
 .title-3--white {
@@ -967,7 +974,7 @@ h6 {
   margin: 0 auto 32px;
   font-size: 16px;
   line-height: 130%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .test-drive__button {
@@ -1449,6 +1456,8 @@ h6 {
 @media (min-width: 1280px) {
   .why {
     padding: 180px 0 70px 0;
+    background: url("../img/why-lights.png") no-repeat;
+    background-size: 100% auto;
   }
 
   .why__title {
@@ -1621,7 +1630,6 @@ h6 {
     font-size: 18px;
     max-width: 444px;
     margin: 0 0 24px 0;
-    font-weight: 300;
   }
 
   .slogan__button {
@@ -1643,7 +1651,7 @@ h6 {
 .subpromo-wrapper {
   border-radius: 40px;
   overflow: hidden;
-  background: #190c39 url("../img/background-spot-light-414.svg") no-repeat 0 0;
+  background: #190c39 url("../img/background-spot-light-414.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -2037,9 +2045,12 @@ h6 {
 .phone-swiper__slide {
   overflow: hidden;
   transition: all 0.7s;
-  background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1280px) {
+  .phone-swiper__slide {
+    border-radius: 40px;
+  }
 }
 
 .phone-swiper__slide.swiper-slide-active {
@@ -2480,7 +2491,8 @@ h6 {
   .softs__in,
 .softs__out {
     font-size: 16px;
-    padding: 6px 31px;
+    padding: 8px 27px;
+    line-height: 110%;
   }
 
   .softs__center {
@@ -2572,6 +2584,9 @@ h6 {
   .softs__item--your .softs__out {
     right: calc(50% + 24px);
     animation: out 5s ease infinite;
+    padding: 8px 27px 8px 39px;
+    background: #31d8b1 url(../img/softs/check.svg) no-repeat 20px center;
+    background-size: 12px 12px;
   }
   .softs__item--your .softs__out::before {
     right: -21px;
@@ -2593,13 +2608,16 @@ h6 {
     animation: in 8s ease infinite;
   }
   .softs__item--datascan .softs__in::before {
-    left: -25px;
-    top: 9px;
+    top: 14px;
+    left: -19px;
   }
   .softs__item--datascan .softs__out {
     transform: rotate(-61deg);
     right: calc(50% + 2px);
     animation: out 8s ease infinite;
+    padding: 8px 27px 8px 37px;
+    background: #31d8b1 url(../img/softs/check.svg) no-repeat 18px center;
+    background-size: 12px 12px;
   }
   .softs__item--datascan .softs__out::before {
     right: -24px;
@@ -2628,17 +2646,20 @@ h6 {
   }
   .softs__item--pksoftware .softs__in::before {
     left: unset;
-    top: 12px;
-    right: -33px;
+    top: 26px;
+    right: -43px;
   }
   .softs__item--pksoftware .softs__out {
     transform: rotate(-118deg);
     right: calc(50% - 1px);
     animation: out 7s ease infinite;
+    padding: 8px 27px 8px 39px;
+    background: #31d8b1 url(../img/softs/check.svg) no-repeat 20px center;
+    background-size: 12px 12px;
   }
   .softs__item--pksoftware .softs__out::before {
     right: unset;
-    top: 40px;
+    top: 42px;
     left: -10px;
   }
   .softs__item--pksoftware .softs__link {
@@ -2670,6 +2691,9 @@ h6 {
     transform: rotate(-180deg);
     right: calc(50% + 25px);
     animation: out 3s ease infinite;
+    padding: 8px 27px 8px 38px;
+    background: #31d8b1 url(../img/softs/check.svg) no-repeat 18px center;
+    background-size: 12px 12px;
   }
   .softs__item--primerx .softs__out::before {
     right: unset;
@@ -2701,12 +2725,15 @@ h6 {
   .softs__item--pioneerrx .softs__in::before {
     left: unset;
     right: -27px;
-    top: 30px;
+    top: 36px;
   }
   .softs__item--pioneerrx .softs__out {
     transform: rotate(118deg);
     right: calc(50% - 1px);
     animation: out 6s ease infinite;
+    padding: 8px 27px 8px 39px;
+    background: #31d8b1 url(../img/softs/check.svg) no-repeat 20px center;
+    background-size: 12px 12px;
   }
   .softs__item--pioneerrx .softs__out::before {
     right: unset;
@@ -2735,13 +2762,16 @@ h6 {
     animation: in 9s ease infinite;
   }
   .softs__item--suiterx .softs__in::before {
-    top: 46px;
-    left: -27px;
+    top: 45px;
+    left: -35px;
   }
   .softs__item--suiterx .softs__out {
     transform: rotate(61deg);
     right: calc(50% - 1px);
     animation: out 9s ease infinite;
+    padding: 8px 27px 8px 37px;
+    background: #31d8b1 url(../img/softs/check.svg) no-repeat 18px center;
+    background-size: 12px 12px;
   }
   .softs__item--suiterx .softs__out::before {
     top: 4px;
