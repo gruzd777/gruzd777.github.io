@@ -11,6 +11,15 @@ const serviceFeaturesScreen = document.querySelector('.service-slider__item');
 const firstSoft = document.querySelector('.softs__item');
 const softs = document.querySelectorAll('.softs__item');
 
+const serviceFeaturesSection = document.querySelector('.service-features');
+const serviceFeaturesTitle = document.querySelector('.service-features__title');
+const ServiceFeaturesTitles = {
+  PHARMACIES: 'Service features',
+  DRIVERS: 'Smart service features',
+  PATIENTS: 'Service features'
+}
+
+
 if (firstSoft) {
   firstSoft.classList.add('softs__item--active');
 }
@@ -49,7 +58,6 @@ const moveMenu = () => {
   });
 };
 
-
 if (serviceFeaturesButtonContainer) {
   serviceFeaturesButtonContainer.addEventListener('click', (e) => {
     if (e.target.classList.contains('service-features__button')) {
@@ -59,10 +67,19 @@ if (serviceFeaturesButtonContainer) {
         'service-slider__item--active',
         'service-slider__item'
       );
+
+      const typeBackground = e.target.dataset.type;
+      if (typeBackground === 'smart') {
+        serviceFeaturesSection.classList.add('service-features--smart');
+      } else {
+        serviceFeaturesSection.classList.remove('service-features--smart')
+      }
+
+      const titleTextType = e.target.dataset.title;
+      serviceFeaturesTitle.textContent = ServiceFeaturesTitles[titleTextType.toUpperCase()];
     }
   });
 }
-
 
 if (document.querySelector('.phone-swiper') || document.querySelector('.simple-swiper')) {
 
@@ -73,6 +90,14 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
     observeParents: true,
     pagination: {
       el: '.swiper__pagination',
+      clickable: true
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false
+    },
+    mousewheel: {
+      releaseOnEdges: true,
     },
   });
 
@@ -83,9 +108,17 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
     spaceBetween: 20,
     pagination: {
       el: '.swiper__pagination',
+      clickable: true
     },
     observer: true,
     observeParents: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false
+    },
+    mousewheel: {
+      releaseOnEdges: true,
+    },
     breakpoints: {
 
       10: {
@@ -98,12 +131,14 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
         slidesPerView: 3,
       },
       1280: {
-        slidesPerView: 3,
+        slidesPerView: 2.9,
       },
     },
   });
 
   const phoneTextList = document.querySelectorAll('.phone-texts');
+  const phoneSlider = document.querySelector('.phone-slider');
+
   phoneTextList.forEach((item) => {
     item.querySelector('.phone-texts__item').classList.add('phone-texts__item--active');
   });
@@ -116,8 +151,8 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
       }
       Array.from(texts)[item.realIndex].classList.add('phone-texts__item--active');
       const color = Array.from(texts)[item.realIndex].dataset.color;
-      item.el.classList.remove('phone-swiper--violet', 'phone-swiper--pistachios', 'phone-swiper--sky');
-      item.el.classList.add(`phone-swiper--${color}`);
+      item.el.closest('.phone-slider').classList.remove('phone-slider--violet', 'phone-slider--pistachios', 'phone-slider--sky');
+      item.el.closest('.phone-slider').classList.add(`phone-slider--${color}`);
     });
   });
 
@@ -127,17 +162,14 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
   });
 
   swiper.on('slideChange', () => {
-      const texts = document.querySelectorAll(`.${swiper.el.dataset.text} .simple-texts__description`);
-      if (document.querySelector(`.${swiper.el.dataset.text} .simple-texts__description--active`)) {
-        document.querySelector(`.${swiper.el.dataset.text} .simple-texts__description--active`).classList.remove('simple-texts__description--active');
-      }
-      Array.from(texts)[swiper.realIndex].classList.add('simple-texts__description--active');
-    });
+    const texts = document.querySelectorAll(`.${swiper.el.dataset.text} .simple-texts__description`);
+    if (document.querySelector(`.${swiper.el.dataset.text} .simple-texts__description--active`)) {
+      document.querySelector(`.${swiper.el.dataset.text} .simple-texts__description--active`).classList.remove('simple-texts__description--active');
+    }
+    Array.from(texts)[swiper.realIndex].classList.add('simple-texts__description--active');
+  });
 
 }
-
-
-
 
 if (document.querySelector('.hoist')) {
   const callback = (entry) => {
@@ -187,7 +219,6 @@ if (document.querySelector('.push-right')) {
     entry.forEach(change => {
       if (change.isIntersecting) {
         change.target.classList.add('push-right--animation');
-
       }
     });
   }

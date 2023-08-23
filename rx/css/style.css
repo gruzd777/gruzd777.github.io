@@ -1,6 +1,13 @@
 @font-face {
   font-family: "Mulish";
   font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(""), url("../fonts/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local(""), url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
@@ -13,18 +20,11 @@
   src: local(""), url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(""), url("../fonts/montserratmedium.woff2") format("woff2"), url("../fonts/montserratmedium.woff") format("woff");
-}
-@font-face {
-  font-family: "Montserrat";
+  font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local(""), url("../fonts/montserratsemibold.woff2") format("woff2"), url("../fonts/montserratsemibold.woff") format("woff");
+  src: local(""), url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff");
 }
 img {
   max-width: 100%;
@@ -225,6 +225,11 @@ h6 {
 
 .push-right--animation {
   animation: push 0.8s ease-in;
+}
+@media (min-width: 1280px) {
+  .push-right--animation {
+    animation: none;
+  }
 }
 
 @keyframes push {
@@ -623,7 +628,7 @@ h6 {
 }
 
 .promo__title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 42px;
   text-align: center;
   line-height: 110%;
@@ -662,7 +667,7 @@ h6 {
 
   .promo__title {
     font-size: 50px;
-    line-height: 110%;
+    line-height: 118%;
     width: 565px;
     max-width: 565px;
   }
@@ -692,7 +697,7 @@ h6 {
     font-size: 65px;
     width: 491px;
     text-align: left;
-    margin: 0 0 24px 0;
+    margin: 0 0 14px 0;
     padding-top: 72px;
   }
 
@@ -711,10 +716,10 @@ h6 {
 
   .promo__img {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 693px;
-    height: 533px;
+    top: 5px;
+    right: 3px;
+    width: 736px;
+    height: 532px;
   }
 }
 .subpromo {
@@ -737,6 +742,7 @@ h6 {
   line-height: 130%;
   margin-bottom: 16px;
   max-width: 485px;
+  font-weight: 300;
 }
 
 .subpromo__text--second {
@@ -836,9 +842,9 @@ h6 {
     font-family: Mulish;
     font-size: 18px;
     line-height: 130%;
-    max-width: 541px;
+    max-width: 531px;
     text-align: left;
-    margin: 0 0 24px 0;
+    margin: 0 0 14px;
   }
 
   .subpromo__card-container {
@@ -849,24 +855,20 @@ h6 {
     height: 355px;
   }
 
-  .subpromo__card {
-    padding: 16px 8px;
-  }
-
   .subpromo__card--first {
     width: 174px;
-    height: 180px;
+    height: 193px;
     box-sizing: border-box;
     z-index: 1000;
-    top: 72px;
+    top: 69px;
     right: calc(50% + 17px);
   }
 
   .subpromo__card--second {
     width: 253px;
     min-height: 206px;
-    padding: 8px 8px 16px 8px;
-    top: 42px;
+    padding: 0 0 23px;
+    top: 30px;
     transform: rotate(8deg);
   }
 
@@ -879,7 +881,16 @@ h6 {
   }
 
   .subpromo__card-text--second {
-    width: 215px;
+    width: 195px;
+  }
+
+  .subpromo__icon--fan {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .subpromo__icon--world {
+    margin-top: 14px;
   }
 }
 .title-2 {
@@ -902,7 +913,7 @@ h6 {
 }
 .title-3 {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 110%;
 }
 .title-3--white {
@@ -956,6 +967,7 @@ h6 {
   margin: 0 auto 32px;
   font-size: 16px;
   line-height: 130%;
+  font-weight: 300;
 }
 
 .test-drive__button {
@@ -1430,8 +1442,8 @@ h6 {
   .why__widget-driver-out {
     width: 325px;
     position: absolute;
-    right: -58px;
-    top: 20px;
+    right: -74px;
+    top: 12px;
   }
 }
 @media (min-width: 1280px) {
@@ -1521,7 +1533,7 @@ h6 {
   .why__map--timely {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 52px;
   }
 
   .why__pic-driver {
@@ -1532,6 +1544,10 @@ h6 {
   .why__pic-time {
     bottom: -158px;
     left: -50px;
+  }
+
+  .why__communication {
+    border-radius: 40px;
   }
 }
 .slogan {
@@ -1605,6 +1621,7 @@ h6 {
     font-size: 18px;
     max-width: 444px;
     margin: 0 0 24px 0;
+    font-weight: 300;
   }
 
   .slogan__button {
@@ -1635,6 +1652,8 @@ h6 {
     background: #190c39 url("../img/subpromo-background-t.jpg") no-repeat 0 0;
     background-size: cover;
     border-radius: 95px;
+    position: relative;
+    z-index: 5;
   }
 }
 .subpromo-slider {
@@ -1644,8 +1663,18 @@ h6 {
 
 .subpromo-slider__block {
   height: 437px;
-  background: url("../img/elips.png") no-repeat center top;
-  background-size: contain;
+  position: relative;
+}
+.subpromo-slider__block::before {
+  content: "";
+  width: 760px;
+  height: 760px;
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../img/circle-bg.png") no-repeat 0 0;
+  background-size: cover;
 }
 
 .subpromo-slider__title {
@@ -1667,10 +1696,13 @@ h6 {
 
   .subpromo-slider__block {
     height: 460px;
-    background: url("../img/elipse-tablet.png") no-repeat center top;
-    background-size: cover;
     padding-top: 71px;
     box-sizing: border-box;
+  }
+  .subpromo-slider__block::before {
+    width: 760px;
+    height: 760px;
+    top: 4px;
   }
 
   .subpromo-slider__title {
@@ -1690,10 +1722,13 @@ h6 {
 @media (min-width: 1280px) {
   .subpromo-slider__block {
     height: 1228px;
-    background: url("../img/ellipse-desk.png") no-repeat center center;
-    background-size: cover;
     position: relative;
     padding-top: 117px;
+  }
+  .subpromo-slider__block::before {
+    width: 1228px;
+    height: 1228px;
+    top: 4px;
   }
 
   .subpromo-slider__title {
@@ -1715,6 +1750,24 @@ h6 {
   box-sizing: border-box;
   padding: 32px 0 127px;
 }
+@media (min-width: 1280px) {
+  .service-features {
+    background: url("../img/slide-features/bg/lights.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-top: -106px;
+    position: relative;
+    z-index: 1;
+    padding-top: 291px;
+    padding-bottom: 174px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .service-features--smart {
+    background-image: url("../img/slide-features/bg/smart-light.png");
+  }
+}
+
 .service-features__wrapper {
   border-radius: 40px;
   overflow: hidden;
@@ -1726,6 +1779,10 @@ h6 {
   .service-features__wrapper {
     margin: 0 auto;
     max-width: 1200px;
+    padding: 41px 40px 63px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 41px;
+    box-sizing: border-box;
   }
 }
 
@@ -1733,6 +1790,11 @@ h6 {
   position: relative;
   z-index: 5;
   margin-top: -13px;
+}
+@media (min-width: 1280px) {
+  .service-features__slider {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1747,6 +1809,13 @@ h6 {
   padding: 0 35px;
   box-sizing: border-box;
 }
+@media (min-width: 1280px) {
+  .service-features__title {
+    padding: 0;
+    margin: 0 0 32px;
+  }
+}
+
 .service-features__buttons-container {
   position: relative;
   padding-right: 16px;
@@ -1762,6 +1831,17 @@ h6 {
   position: absolute;
   z-index: 5;
 }
+@media (min-width: 1280px) {
+  .service-features__buttons-container::before {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .service-features__buttons-container {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .service-features__buttons-wrapper {
   width: 100%;
@@ -1772,7 +1852,7 @@ h6 {
 }
 @media (min-width: 1280px) {
   .service-features__buttons-wrapper {
-    width: 300px;
+    width: 240px;
     overflow: visible;
     z-index: 20;
   }
@@ -1794,10 +1874,16 @@ h6 {
   font-size: 16px;
   display: block;
 }
+@media (min-width: 1280px) {
+  .service-features__button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 
 @media (min-width: 1280px) {
   .service-features__slider {
-    width: 854px;
+    width: 879px;
   }
 }
 
@@ -1835,6 +1921,11 @@ h6 {
   box-sizing: border-box;
   position: relative;
 }
+@media (min-width: 1280px) {
+  .slider-item {
+    padding: 0;
+  }
+}
 
 .slider-item__description {
   padding: 26px 26px 37px;
@@ -1867,6 +1958,13 @@ h6 {
   margin-bottom: 16px;
 }
 
+@media (min-width: 1280px) {
+  .slider-item__picture {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+}
+
 .slider-item__pic {
   width: 100%;
   display: block;
@@ -1880,6 +1978,17 @@ h6 {
   .phone-slider {
     overflow: visible;
     position: relative;
+    border-radius: 30px;
+    background: rgba(185, 248, 236, 0.3);
+  }
+  .phone-slider--violet {
+    background-color: rgba(232, 213, 252, 0.3);
+  }
+  .phone-slider--pistachios {
+    background-color: rgba(185, 248, 236, 0.3);
+  }
+  .phone-slider--sky {
+    background-color: rgba(216, 235, 253, 0.3);
   }
 }
 
@@ -1901,6 +2010,7 @@ h6 {
   .simple-slider {
     overflow: visible;
     position: relative;
+    margin: 0;
   }
 }
 
@@ -1917,16 +2027,10 @@ h6 {
 @media (min-width: 1280px) {
   .phone-swiper {
     overflow: hidden;
-    background: rgba(185, 248, 236, 0.3);
-  }
-  .phone-swiper--violet {
-    background-color: rgba(232, 213, 252, 0.3);
-  }
-  .phone-swiper--pistachios {
-    background-color: rgba(185, 248, 236, 0.3);
-  }
-  .phone-swiper--sky {
-    background-color: rgba(216, 235, 253, 0.3);
+    width: 740px;
+    margin: 0 auto;
+    background: none;
+    padding: 47px 0;
   }
 }
 
@@ -1942,7 +2046,6 @@ h6 {
   opacity: 1;
   z-index: 1;
   transform: translateY(-4px) scale(1.1);
-  box-shadow: 5px 10px 13px rgba(0, 0, 0, 0.3);
   margin: 0 !important;
 }
 
@@ -1958,7 +2061,6 @@ h6 {
 
 .phone-swiper__img {
   width: 100%;
-  opacity: 0.4;
 }
 
 .phone-swiper__slide.swiper-slide-active .phone-swiper__img {
@@ -1998,6 +2100,9 @@ h6 {
     position: absolute;
     width: 336px;
     transition: opacity 0.3s;
+    padding: 30px 26px 27px;
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 
@@ -2068,6 +2173,9 @@ h6 {
     width: 336px;
     transition: none;
     z-index: -1;
+    padding: 30px 26px 27px;
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 
@@ -2122,11 +2230,21 @@ h6 {
   gap: 7px;
   justify-content: center;
 }
+@media (min-width: 1280px) {
+  .pagination {
+    justify-content: right;
+    position: absolute;
+    bottom: -32px !important;
+    left: unset !important;
+    padding-right: 0px;
+    box-sizing: border-box;
+  }
+}
 
 @media (min-width: 1280px) {
   .position--left-bottom {
-    left: -20px;
-    bottom: -20px;
+    left: -29px;
+    bottom: -14px;
   }
 }
 
