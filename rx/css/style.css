@@ -200,19 +200,19 @@ h6 {
 }
 
 .hoisting__element--pionerrx {
-  transition: all 2.5s ease-out;
-}
-
-.hoisting__element--datascan {
   transition: all 3s ease-out;
 }
 
-.hoisting__element--suitrx {
+.hoisting__element--datascan {
   transition: all 3.5s ease-out;
 }
 
-.hoisting__element--pksoftware {
+.hoisting__element--suitrx {
   transition: all 4s ease-out;
+}
+
+.hoisting__element--pksoftware {
+  transition: all 4.5s ease-out;
 }
 
 .hoisting__element--not-visible {
@@ -364,6 +364,8 @@ h6 {
 .page-header__button {
   width: 223px;
   padding: 17px 32px;
+  position: absolute;
+  bottom: 24px;
 }
 
 .page-header__button--oppened {
@@ -565,17 +567,22 @@ h6 {
   }
 }
 .menu {
-  margin-top: 32px;
-  height: 0;
-  margin: 0;
+  margin: 24px 0 0;
   transform: translateX(100vw);
   transition: 1s;
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  padding-top: 8px;
+  left: 0;
+  padding-left: 16px;
+  height: calc(100vh - 97px);
 }
 
 .menu--oppened {
   transform: translateX(0%);
-  margin-top: 32px;
-  height: calc(100vh - 105px);
+  height: calc(100vh - 97px);
 }
 
 .menu__list {
@@ -741,7 +748,7 @@ h6 {
 }
 
 .subpromo__title {
-  max-width: 385px;
+  width: 371px;
   text-align: left;
   margin-bottom: 24px;
 }
@@ -749,7 +756,7 @@ h6 {
 .subpromo__text {
   line-height: 130%;
   margin-bottom: 16px;
-  max-width: 485px;
+  width: 369px;
 }
 
 .subpromo__text--second {
@@ -776,26 +783,32 @@ h6 {
 }
 
 .subpromo__card--first {
-  top: 70px;
-  right: calc(50% + 30px);
-  width: 156px;
+  top: 81px;
+  right: calc(50% + 20px);
+  width: 171px;
   height: 194px;
-  background: #76E3D4;
+  background: #76e3d4;
   transform: rotate(-5deg);
   z-index: 100;
 }
 
 .subpromo__card--second {
-  top: 0;
-  left: calc(50% - 22px);
-  width: 227px;
+  top: 5px;
+  left: calc(50% - 14px);
+  width: 226px;
   min-height: 299px;
   transform: rotate(11deg);
-  background: #CBD2F9;
+  background: #cbd2f9;
+  padding-top: 15px;
 }
 
 .subpromo__icon {
   margin-bottom: 14px;
+}
+
+.subpromo__icon--world {
+  margin-right: 17px;
+  transform: rotate(-12deg);
 }
 
 .subpromo__card-text {
@@ -818,7 +831,7 @@ h6 {
   }
 
   .subpromo__title {
-    max-width: 485px;
+    width: 481px;
     margin: 0 auto 24px;
     text-align: center;
   }
@@ -826,7 +839,7 @@ h6 {
   .subpromo__text {
     margin: 0 auto 24px;
     text-align: center;
-    max-width: 482px;
+    width: 482px;
   }
 
   .subpromo__text--second {
@@ -840,7 +853,7 @@ h6 {
   }
 
   .subpromo__title {
-    max-width: 763px;
+    width: 763px;
     text-align: left;
     margin: 0 0 32px 0;
   }
@@ -849,7 +862,7 @@ h6 {
     font-family: Mulish;
     font-size: 18px;
     line-height: 130%;
-    max-width: 531px;
+    width: 531px;
     text-align: left;
     margin: 0 0 14px;
   }
@@ -1111,17 +1124,17 @@ h6 {
 .why__pic-driver {
   display: inline-block;
   position: absolute;
-  width: 228px;
+  width: 214px;
   height: 125px;
   top: 13px;
-  right: -38px;
+  right: -39px;
 }
 
 .why__pic-time {
   display: inline-block;
   position: absolute;
   left: -17px;
-  bottom: -45px;
+  bottom: -53px;
   width: 141px;
   height: 157px;
 }
@@ -1670,7 +1683,7 @@ h6 {
 }
 
 .subpromo-slider__block {
-  height: 437px;
+  height: 335px;
   position: relative;
 }
 .subpromo-slider__block::before {
@@ -1686,7 +1699,7 @@ h6 {
 }
 
 .subpromo-slider__title {
-  max-width: 382px;
+  width: 382px;
   margin: 0 auto 54px;
   text-align: center;
 }
@@ -1714,7 +1727,7 @@ h6 {
   }
 
   .subpromo-slider__title {
-    max-width: 542px;
+    width: 542px;
     margin: 0 auto;
   }
 
@@ -1740,7 +1753,7 @@ h6 {
   }
 
   .subpromo-slider__title {
-    max-width: 950px;
+    width: 950px;
   }
 
   .subpromo__logo-link {
@@ -2377,7 +2390,7 @@ h6 {
   margin: 0;
   color: #ffffff;
   border-radius: 30px;
-  background: #8871f6;
+  background-image: linear-gradient(180deg, #8871F6 0%, #7960F6 100%);
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
@@ -2385,7 +2398,7 @@ h6 {
   font-weight: 500;
   line-height: 18px;
   padding: 6px 17px 7px;
-  line-height: 13px;
+  line-height: 110%;
   position: absolute;
   left: calc(50% + 19px);
   top: 100%;
@@ -2416,12 +2429,11 @@ h6 {
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
-  background: #31d8b1 url("../img/softs/check.svg") no-repeat 12px center;
+  background: url("../img/softs/check.svg") no-repeat 12px center/12px 12px, linear-gradient(125deg, #31D8B1 0%, #03C799 100%);
   font-size: 13px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 110%;
   padding: 4px 12px 4px 27px;
-  background-size: 12px 12px;
   position: absolute;
   right: calc(50% + 19px);
   transform: translateY(-50%);
