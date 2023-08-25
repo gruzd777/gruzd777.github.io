@@ -290,6 +290,10 @@ h6 {
   }
 }
 
+.page-body--hidden {
+  overflow: hidden;
+}
+
 .page-header {
   padding-top: 32px;
   padding-left: 16px;
@@ -422,6 +426,7 @@ h6 {
 
   .page-header__button {
     margin-left: auto;
+    position: initial;
   }
 
   .page-header__logo-link {
@@ -618,6 +623,10 @@ h6 {
     height: auto;
     width: 100%;
     display: flex;
+    position: initial;
+    padding: 0;
+    margin: 0;
+    background: transparent;
   }
 
   .menu__list {
@@ -1561,6 +1570,8 @@ h6 {
   .why__pic-driver {
     top: -4px;
     right: -124px;
+    width: 271px;
+    height: 164px;
   }
 
   .why__pic-time {
@@ -1839,8 +1850,8 @@ h6 {
 
 .service-features__buttons-container {
   position: relative;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .service-features__buttons-container::before {
   content: "";
@@ -1891,7 +1902,7 @@ h6 {
 }
 
 .service-features__button {
-  padding: 18px 31px 16px;
+  padding: 14px 22px 13px;
   font-size: 16px;
   display: block;
 }
@@ -1899,6 +1910,7 @@ h6 {
   .service-features__button {
     font-size: 18px;
     line-height: 22px;
+    padding: 18px 31px 16px;
   }
 }
 
@@ -1938,7 +1950,7 @@ h6 {
 }
 
 .slider-item {
-  padding: 0 16px;
+  padding: 0;
   box-sizing: border-box;
   position: relative;
 }
@@ -1992,7 +2004,7 @@ h6 {
 }
 
 .phone-slider {
-  margin: 0 16px;
+  margin: 0 32px;
   overflow: hidden;
 }
 @media (min-width: 1280px) {
@@ -2024,7 +2036,7 @@ h6 {
 }
 
 .simple-slider {
-  margin: 0 16px;
+  margin: 0 32px;
   overflow: hidden;
 }
 @media (min-width: 1280px) {
@@ -2041,8 +2053,8 @@ h6 {
 
 .phone-swiper {
   width: 100%;
-  padding: 80px 0;
-  background: #b9f8ec;
+  padding: 50px 0;
+  background-color: rgba(232, 213, 252, 0.3);
   border-radius: 30px;
 }
 @media (min-width: 1280px) {
@@ -2052,6 +2064,24 @@ h6 {
     margin: 0 auto;
     background: none;
     padding: 47px 0;
+  }
+}
+
+.phone-slider--violet .phone-swiper {
+  background-color: rgba(232, 213, 252, 0.3);
+}
+
+.phone-slider--pistachios .phone-swiper {
+  background-color: rgba(185, 248, 236, 0.3);
+}
+
+.phone-slider--sky .phone-swiper {
+  background-color: rgba(216, 235, 253, 0.3);
+}
+
+@media (min-width: 1280px) {
+  .phone-slider .phone-swiper {
+    background-color: transparent;
   }
 }
 
@@ -2080,7 +2110,7 @@ h6 {
 
 .phone-swiper__slide.swiper-slide-next {
   margin-left: -4px !important;
-  margin-right: 25px !important;
+  margin-right: 40px !important;
 }
 
 .phone-swiper__img {

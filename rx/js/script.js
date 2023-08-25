@@ -122,7 +122,7 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
     breakpoints: {
 
       10: {
-        slidesPerView: 2,
+        slidesPerView: 2.4,
       },
       768: {
         slidesPerView: 3,
@@ -145,6 +145,10 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
 
   swiperPhonesList.forEach((item) => {
     item.on('slideChange', () => {
+
+      // console.log(item.realIndex, ' ', item.slides.length - 2)
+
+
       const texts = document.querySelectorAll(`.${item.el.dataset.text} .phone-texts__item`);
       if (document.querySelector(`.${item.el.dataset.text} .phone-texts__item--active`)) {
         document.querySelector(`.${item.el.dataset.text} .phone-texts__item--active`).classList.remove('phone-texts__item--active');
@@ -162,6 +166,11 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
   });
 
   swiper.on('slideChange', () => {
+
+
+    // console.log(swiper.realIndex, ' ', swiper.slides.length - 2)
+
+
     const texts = document.querySelectorAll(`.${swiper.el.dataset.text} .simple-texts__description`);
     if (document.querySelector(`.${swiper.el.dataset.text} .simple-texts__description--active`)) {
       document.querySelector(`.${swiper.el.dataset.text} .simple-texts__description--active`).classList.remove('simple-texts__description--active');
@@ -238,10 +247,22 @@ const menu = document.querySelector('.menu');
 const toggle = document.querySelector('.page-header__toggle');
 const mainButton = document.querySelector('.page-header__button')
 const pageHeaderElement = document.querySelector('.page-header');
+const pageBodyElement = document.querySelector('.page-body');
+const menuList = document.querySelector('.menu__list');
 
 toggle.addEventListener('click', function () {
   toggle.classList.toggle('page-header__toggle--closed');
   menu.classList.toggle('menu--oppened');
   pageHeaderElement.classList.toggle('page-header--white');
   mainButton.classList.toggle('page-header__button--oppened');
+  pageBodyElement.classList.toggle('page-body--hidden');
+})
+
+menuList.addEventListener('click', function(evt) {
+  if(evt.target.classList.contains('menu__link')) {
+    pageBodyElement.classList.remove('page-body--hidden');
+    menu.classList.remove('menu--oppened');
+    pageHeaderElement.classList.remove('page-header--white');
+    toggle.classList.add('page-header__toggle--closed');
+  }
 })
