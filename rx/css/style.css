@@ -300,10 +300,12 @@ h6 {
   padding-right: 16px;
   padding-bottom: 24px;
   overflow: hidden;
+  position: relative;
 }
 
 .page-header--white {
   background-color: #ffffff;
+  overflow: visible;
 }
 
 .page-header--menu-oppened {
@@ -583,6 +585,7 @@ h6 {
   left: 0;
   padding-left: 16px;
   height: calc(100vh - 97px);
+  box-sizing: border-box;
 }
 
 .menu--oppened {
@@ -2645,13 +2648,13 @@ h6 {
   }
   .softs__item--datascan .softs__in {
     transform: rotate(-61deg);
-    left: calc(50% + 0px);
+    left: calc(50% + 17px);
     margin-top: -118px;
     animation: in 8s ease infinite;
   }
   .softs__item--datascan .softs__in::before {
-    top: 14px;
-    left: -19px;
+    top: 2px;
+    left: -29px;
   }
   .softs__item--datascan .softs__out {
     transform: rotate(-61deg);
@@ -2682,14 +2685,14 @@ h6 {
   }
   .softs__item--pksoftware .softs__in {
     transform: rotate(-118deg);
-    left: calc(50% + 0px);
+    left: calc(50% + 13px);
     margin-top: 116px;
     animation: in 7s ease infinite;
   }
   .softs__item--pksoftware .softs__in::before {
     left: unset;
-    top: 26px;
-    right: -43px;
+    top: 16px;
+    right: -51px;
   }
   .softs__item--pksoftware .softs__out {
     transform: rotate(-118deg);
@@ -2760,14 +2763,14 @@ h6 {
   }
   .softs__item--pioneerrx .softs__in {
     transform: rotate(118deg);
-    left: calc(50% + 2px);
+    left: calc(50% + 12px);
     margin-top: -126px;
     animation: in 6s ease infinite;
   }
   .softs__item--pioneerrx .softs__in::before {
     left: unset;
     right: -27px;
-    top: 36px;
+    top: 46px;
   }
   .softs__item--pioneerrx .softs__out {
     transform: rotate(118deg);
