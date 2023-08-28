@@ -178,7 +178,7 @@ h6 {
   border-color: transparent;
 }
 .button--squared.active {
-  background-color: #8871f6;
+  background-image: linear-gradient(180deg, #8871F6 0%, #7960F6 100%);
   color: #ffffff;
   border-color: transparent;
   font-weight: 700;
@@ -215,8 +215,13 @@ h6 {
   transition: all 4.5s ease-out;
 }
 
+.hoisting__element--not-visible-widgets {
+  translate: 0 800px;
+  opacity: 0;
+}
+
 .hoisting__element--not-visible {
-  translate: 0 1000px;
+  translate: 0 200px;
   opacity: 0;
 }
 
@@ -1856,21 +1861,6 @@ h6 {
   padding-right: 32px;
   padding-left: 32px;
 }
-.service-features__buttons-container::before {
-  content: "";
-  width: 100%;
-  height: 30px;
-  background: #ffffff;
-  top: calc(100% - 20px);
-  left: 0;
-  position: absolute;
-  z-index: 5;
-}
-@media (min-width: 1280px) {
-  .service-features__buttons-container::before {
-    display: none;
-  }
-}
 @media (min-width: 1280px) {
   .service-features__buttons-container {
     padding: 0;
@@ -1895,12 +1885,21 @@ h6 {
 
 .service-features__buttons {
   display: inline-flex;
-  width: auto;
   white-space: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .service-features__buttons {
+    justify-content: flex-start;
+    width: auto;
+  }
 }
 @media (min-width: 1280px) {
   .service-features__buttons {
     display: block;
+    justify-content: flex-start;
+    width: auto;
   }
 }
 
@@ -1914,6 +1913,8 @@ h6 {
     font-size: 18px;
     line-height: 22px;
     padding: 18px 31px 16px;
+    width: 195px;
+    text-align: left;
   }
 }
 
