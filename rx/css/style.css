@@ -103,6 +103,11 @@ h6 {
     display: inline-block;
   }
 }
+@media (min-width: 1280px) {
+  .only--tablet {
+    display: none;
+  }
+}
 
 .only--desktop {
   display: none;
@@ -2060,6 +2065,7 @@ h6 {
   padding: 50px 0;
   background-color: rgba(232, 213, 252, 0.3);
   border-radius: 30px;
+  margin-bottom: 25px;
 }
 @media (min-width: 1280px) {
   .phone-swiper {
@@ -2091,7 +2097,7 @@ h6 {
 
 .phone-swiper__slide {
   overflow: hidden;
-  transition: all 0.7s;
+  transition: none;
   border-radius: 20px;
 }
 @media (min-width: 1280px) {
@@ -2145,13 +2151,18 @@ h6 {
   background: #b9f8ec;
   width: 100%;
   box-sizing: border-box;
-  min-height: 200px;
+  min-height: 220px;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   z-index: 0;
   transition: opacity 1s;
+}
+@media (min-width: 768px) {
+  .simple-texts__description {
+    min-height: 162px;
+  }
 }
 @media (min-width: 1280px) {
   .simple-texts__description {
