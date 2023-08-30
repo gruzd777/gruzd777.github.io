@@ -194,7 +194,7 @@ h6 {
 }
 
 .hoisting__element {
-  transition: all 2.5s ease-out;
+  transition: all 1.5s ease-out;
   z-index: 10;
   opacity: 1;
   translate: 0 0;
@@ -205,23 +205,23 @@ h6 {
 }
 
 .hoisting__element--pionerrx {
-  transition: all 3s ease-out;
+  transition: all 2s ease-out;
 }
 
 .hoisting__element--datascan {
-  transition: all 3.5s ease-out;
+  transition: all 2.5s ease-out;
 }
 
 .hoisting__element--suitrx {
-  transition: all 4s ease-out;
+  transition: all 3s ease-out;
 }
 
 .hoisting__element--pksoftware {
-  transition: all 4.5s ease-out;
+  transition: all 3.5s ease-out;
 }
 
 .hoisting__element--not-visible-widgets {
-  translate: 0 800px;
+  translate: 0 400px;
   opacity: 0;
 }
 
@@ -2097,7 +2097,7 @@ h6 {
 
 .phone-swiper__slide {
   overflow: hidden;
-  transition: none;
+  transition: 0.5s;
   border-radius: 20px;
 }
 @media (min-width: 1280px) {
@@ -2839,4 +2839,7 @@ h6 {
     top: -13px;
     left: -13px;
   }
+}
+.calendly-badge-widget {
+  right: -1000px !important;
 }

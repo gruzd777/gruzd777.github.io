@@ -59,21 +59,21 @@ const moveMenu = () => {
 
 const serviceFeatureButtonClickHandler = (element) => {
   setActive(element, 'active', 'service-features__button');
-      setActive(
-        Array.from(serviceFeaturesScreens)[Array.from(serviceFeaturesButtons).indexOf(element)],
-        'service-slider__item--active',
-        'service-slider__item'
-      );
+  setActive(
+    Array.from(serviceFeaturesScreens)[Array.from(serviceFeaturesButtons).indexOf(element)],
+    'service-slider__item--active',
+    'service-slider__item'
+  );
 
-      const typeBackground = element.dataset.type;
-      if (typeBackground === 'smart') {
-        serviceFeaturesSection.classList.add('service-features--smart');
-      } else {
-        serviceFeaturesSection.classList.remove('service-features--smart')
-      }
+  const typeBackground = element.dataset.type;
+  if (typeBackground === 'smart') {
+    serviceFeaturesSection.classList.add('service-features--smart');
+  } else {
+    serviceFeaturesSection.classList.remove('service-features--smart')
+  }
 
-      // const titleTextType = element.dataset.title;
-      // serviceFeaturesTitle.textContent = ServiceFeaturesTitles[titleTextType.toUpperCase()];
+  // const titleTextType = element.dataset.title;
+  // serviceFeaturesTitle.textContent = ServiceFeaturesTitles[titleTextType.toUpperCase()];
 }
 
 if (serviceFeaturesButtonContainer) {
@@ -108,7 +108,7 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
   const swiperPhonesList = new Swiper('.phone-swiper', {
     centeredSlides: true,
     loop: true,
-    speed: 500,
+    speed: 1000,
     spaceBetween: 20,
     pagination: {
       el: '.swiper__pagination',
@@ -177,6 +177,14 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
     // });
   });
 
+  document.querySelectorAll('.booking-button').forEach((bookingButton) => {
+    bookingButton.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      document.querySelector('.calendly-badge-content').click();
+      console.log('click');
+    })
+  })
+
   const simpleTextList = document.querySelectorAll('.simple-texts');
   simpleTextList.forEach((item) => {
     item.querySelector('.simple-texts__description').classList.add('simple-texts__description--active');
@@ -204,7 +212,7 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
 
   }
   const options = {
-    threshold: 0.5
+    threshold: 0.3
   }
   const observer = new IntersectionObserver(callback, options);
   observer.observe(swiperSection);
@@ -257,22 +265,16 @@ if (document.querySelector('.hoisting-text')) {
 
 if (document.querySelector('.push-right')) {
   const callback = (entry) => {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-        change.target.classList.add('push-right--animation');
-      }
-    });
+    if (entry[0].isIntersecting) {
+      document.querySelector('.push-right').classList.add('push-right--animation');
+    }
   }
   const options = {
-    threshold: 0.5
+    threshold: 0.7
   }
   const observer = new IntersectionObserver(callback, options);
-
-  const targets = document.querySelectorAll('.push-right');
-
-  targets.forEach((target) => {
-    observer.observe(target);
-  });
+  const target = document.querySelector('.service-features');
+  observer.observe(target);
 }
 
 const menu = document.querySelector('.menu');
