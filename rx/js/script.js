@@ -12,6 +12,7 @@ const firstSoft = document.querySelector('.softs__item');
 const softs = document.querySelectorAll('.softs__item');
 
 const serviceFeaturesSection = document.querySelector('.service-features');
+const serviceFeaturesWrapper = document.querySelector('.service-features__wrapper');
 const serviceFeaturesTitle = document.querySelector('.service-features__title');
 
 if (firstSoft) {
@@ -48,7 +49,7 @@ const serviceFeatureButtonClickHandler = (element) => {
   swiperPhonesList[0].slideToLoop(0);
   swiperPhonesList[1].slideToLoop(0);
   const typeBackground = element.dataset.type;
-  
+
   if (typeBackground === 'smart') {
     serviceFeaturesSection.classList.add('service-features--smart');
   } else {
@@ -58,8 +59,8 @@ const serviceFeatureButtonClickHandler = (element) => {
 
 if (serviceFeaturesButtonContainer) {
   serviceFeaturesButtonContainer.addEventListener('click', (e) => {
-    if (e.target.classList.contains('service-features__button')) {
-      serviceFeatureButtonClickHandler(e.target);
+    if (e.target.closest('.service-features__button')) {
+      serviceFeatureButtonClickHandler(e.target.closest('.service-features__button'));
     }
   });
 }
@@ -124,8 +125,16 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
       },
     },
   });
+  let x;
+  let y;
+  // window.addEventListener('scroll', (evt) => {
+  //   if(document.body.classList.contains('body--slider-activate') && y){
 
-
+  //     window.scrollTo(x,y);
+  //   console.log('scroll ', x, ' ', y);
+  //   return false;
+  //   }
+  // })
   const phoneTextList = document.querySelectorAll('.phone-texts');
   const phoneSlider = document.querySelector('.phone-slider');
 
@@ -146,7 +155,6 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
       item.el.closest('.phone-slider').classList.remove('phone-slider--violet', 'phone-slider--pistachios', 'phone-slider--sky');
       item.el.closest('.phone-slider').classList.add(`phone-slider--${color}`);
 
-      // const serviceFeaturesButtons = document.querySelectorAll('.service-features__button');
       const activeBtn = document.querySelector('.service-features__button.active');
       const currentIndexBtn = Array.from(serviceFeaturesButtons).indexOf(activeBtn);
       if (item.realIndex * 1 === 0 && prev === item.slides.length - 6 - 1) {
@@ -187,15 +195,18 @@ if (document.querySelector('.phone-swiper') || document.querySelector('.simple-s
       swiper.params.autoplay.stopOnLastSlide = true;
       swiper.params.autoplay.disableOnInteraction = true;
       swiper.params.speed = 1000;
-      swiper.autoplay.start()
-    }
+      swiper.autoplay.start();
 
+      document.body.classList.add('body--slider-activate');
+      x = window.scrollX;
+      y = window.scrollY;
+    }
   }
   const options = {
-    threshold: 0.3
+    threshold: 0.5
   }
   const observer = new IntersectionObserver(callback, options);
-  observer.observe(serviceFeaturesSection);
+  observer.observe(serviceFeaturesWrapper);
 }
 
 if (document.querySelector('.booking-button')) {
@@ -214,6 +225,7 @@ if (document.querySelector('.hoist')) {
         change.target.querySelectorAll('.hoisting__element').forEach((item) => {
           item.classList.remove('hoisting__element--not-visible');
           item.classList.remove('hoisting__element--not-visible-widgets');
+          item.classList.remove('hoisting__element--not-visible-100');
         });
       }
     });
@@ -235,7 +247,7 @@ if (document.querySelector('.hoisting-text')) {
     entry.forEach(change => {
       if (change.isIntersecting) {
         change.target.classList.remove('hoisting-text--start');
-
+        change.target.classList.remove('hoisting-text--main-start');
       }
     });
   }
